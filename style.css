@@ -40,27 +40,19 @@ h2{
 	}
 /*MAIN*/
 	main{
-		padding: 30px 5px;
+		padding: 40px 0;
 	}
 	/*RIGHT SECTION*/
-	.otherChapters .icon{
-		width: 13px;
-		height: 13px;
-	}
 	.itemSection{
 		margin-bottom: 50px;
 	} 
 	.itemSection h2{
 		margin-bottom: 10px;
 	}
-	.itemSection span{
-		vertical-align: top;
-		font-size: 12px;
-		margin-left: 5px;
-	}
 	.itemSection li{
 		height: 25px;				
-	}					
+	}	
+			
 
 
 /*- DESKTOP -*/
@@ -77,10 +69,50 @@ h2{
 		display: flex;
 		justify-content: space-between;
 	}
+	/*RIGHT SECTION*/
+	.otherChapters .icon{
+		width: 13px;
+		height: 13px;
+	}
+	.itemSection span{
+		vertical-align: top;
+		font-size: 12px;
+		margin-left: 5px;
+	}
 }
 
 /*- TABLET -*/
-@media (min-width: 640px) and (max-width: 1020px){}
+@media (min-width: 640px) and (max-width: 1020px){
+	/*HEADER*/
+	.headerLogo{
+		margin: 0 auto;
+	}	
+/*MAIN*/
+	main{
+		margin: 0 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.itemSection span{
+		vertical-align: top;
+		font-size: 12px;
+		margin-left: 5px;
+	}
+}
 
 /*- MOBILE -*/
-@media (min-width: 320px) and (max-width: 640px){}
+@media (min-width: 320px) and (max-width: 640px){
+	main{
+		margin: 0 5px;
+	}
+	/*RIGHT SECTION*/
+	.otherChapters .icon{
+		width: 15px;
+		height: 15px;
+	}
+	.itemSection span{
+		vertical-align: top;
+		margin-left: 5px;
+	}
+}
