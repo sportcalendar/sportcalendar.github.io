@@ -22,9 +22,7 @@
 		width: 12px;
 		height: 12px;
 	}
-	.filterItem{
-		display: none;
-	}
+	
 	
 /*LIST CONTENT*/
 	.blockContent{
@@ -59,9 +57,47 @@
 /*---DESKTOP---*/
 @media (min-width: 1020px) and (max-width: 1450px){
 /*FILTERS*/
-.filterMenu{
-	margin-bottom: 40px;
-}
+		.filterMenu{
+			margin-bottom: 40px;
+		}
+		
+		/*modal*/
+		.dateFilter .modal,
+		.locFilter .modal,
+		.categoryFilter .modal{
+		display: none;
+		}
+		.modal .filterItem{
+			padding: 5px 0;
+		}
+		/*categoryFilter*/
+		.categoryFilter .filterContent{
+			display: flex;		
+		}
+		.categoryFilter .filterContent li{
+			margin-right: 20px;
+		}
+		/*locationFilter*/
+		.locFilter .filterContent{
+			display: flex;		
+		}
+		.locFilter .filterContent li{
+			margin-right: 15px;
+		}
+		/*dateFilter*/
+		.dateFilter .filterItem{
+			font-size: 16px;
+		}
+		.dateFilter .seasonItem{
+			padding: 18px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.dateFilter .filterHeader{
+			
+		}
+
+		
 
 /*EVENT SECTION*/
 	.eventSection{
@@ -94,6 +130,7 @@ border-top: 3px solid var(--color_blue);
 
 /*---TABLET---*/
 @media (min-width: 640px) and (max-width: 1020px){
+	
 	/*EVENT SECTION*/
 	.eventSection{
 		width: 500px;
@@ -126,17 +163,21 @@ border-top: 3px solid var(--color_blue);
 
 /*---MOBILE---*/
 @media (min-width: 320px) and (max-width: 640px){
+/*FILTERS*/
+	.filterMenu{
+		margin-bottom: 40px;
+	}
 /*image EVENT*/
-.imgContent img{
-	width: 120px;
-	height: 80px;
-}
+	.imgContent img{
+		width: 120px;
+		height: 80px;
+	}
 
-.infoContent {
-	width: 60%;
-	overflow: hidden; 
-	white-space: nowrap; 
-	text-overflow: ellipsis; 
-}
+	.infoContent {
+		width: 60%;
+		overflow: hidden; 
+		white-space: nowrap; 
+		text-overflow: ellipsis; 
+	}
 
 }
