@@ -40,8 +40,27 @@ h2{
 	}
 /*MAIN*/
 	main{
-		padding: 0 5px;
+		padding: 30px 5px;
 	}
+	/*RIGHT SECTION*/
+	.otherChapters .icon{
+		width: 13px;
+		height: 13px;
+	}
+	.itemSection{
+		margin-bottom: 50px;
+	} 
+	.itemSection h2{
+		margin-bottom: 10px;
+	}
+	.itemSection span{
+		vertical-align: top;
+		font-size: 12px;
+		margin-left: 5px;
+	}
+	.itemSection li{
+		height: 25px;				
+	}					
 
 
 /*- DESKTOP -*/
