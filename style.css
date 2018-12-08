@@ -16,18 +16,43 @@
 	margin: 0;
 	letter-spacing: .015em;
 }
-body{
-	background: url("img/bg2.jpg") no-repeat;
-	background-size: cover;
-}
 h2{
 	font-size: 18px;
 	font-weight: normal;
 }
-.icon{
+* .icon{
 	width: 16px;
 	height: 16px;
 }
+
+
+
+/*MODAL*/
+.modal{
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.082);
+}
+.modalClose{
+	background: #fff;
+	border: none;
+}
+.modalFilter{
+	top: 135px;
+	left: 50%;
+
+	width: 610px;
+	height: 300px;
+	margin-left: -480px;
+	padding: 10px 10px;
+}
+.modal .filterHeader{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+
 /*HEADER*/
 	.header{
 		height: 70px;
@@ -38,16 +63,13 @@ h2{
 		width: 200px;
 		margin: 10px;
 	}
-/*MAIN*/
-	main{
-		padding: 40px 0;
-	}
+
 	/*RIGHT SECTION*/
 	.itemSection{
 		margin-bottom: 50px;
 	} 
-	.itemSection h2{
-		margin-bottom: 10px;
+	.quickNavigation p{
+		padding-bottom: 15px;
 	}
 	.itemSection li{
 		height: 25px;				
@@ -63,6 +85,9 @@ h2{
 		margin: 0 auto;
 	}	
 /*MAIN*/
+	main{
+		padding: 40px 0;
+	}
 	main{
 		width: 950px;
 		margin: 0 auto;
@@ -89,7 +114,7 @@ h2{
 	}	
 /*MAIN*/
 	main{
-		margin: 0 10px;
+		margin: 30px 10px;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -104,7 +129,7 @@ h2{
 /*- MOBILE -*/
 @media (min-width: 320px) and (max-width: 640px){
 	main{
-		margin: 0 5px;
+		margin: 30px 5px;
 	}
 	/*RIGHT SECTION*/
 	.otherChapters .icon{
