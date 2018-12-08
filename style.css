@@ -1,0 +1,67 @@
+:root{
+	--color_black: #22344E;
+	--color_grey:rgb(153, 148, 165);
+	--line_greylight:#f0f0fa;
+	--color_red: #991516;
+	--color_blue: #193968;
+}
+*{
+	box-sizing: border-box;
+	font-family: "Tahoma";
+	font-size: 14px;
+	color: var(--color_black);
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	letter-spacing: .015em;
+}
+body{
+	background: url("img/bg2.jpg") no-repeat;
+	background-size: cover;
+}
+h2{
+	font-size: 18px;
+	font-weight: normal;
+}
+.icon{
+	width: 16px;
+	height: 16px;
+}
+/*HEADER*/
+	.header{
+		height: 70px;
+		background-color: var(--color_blue);
+	}
+	.headerLogo svg{
+		height: 50px;
+		width: 200px;
+		margin: 10px;
+	}
+/*MAIN*/
+	main{
+		padding: 0 5px;
+	}
+
+
+/*- DESKTOP -*/
+@media (min-width: 1020px) and (max-width: 1450px){
+/*HEADER*/
+	.headerLogo{
+		width: 950px;
+		margin: 0 auto;
+	}	
+/*MAIN*/
+	main{
+		width: 950px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+/*- TABLET -*/
+@media (min-width: 640px) and (max-width: 1020px){}
+
+/*- MOBILE -*/
+@media (min-width: 320px) and (max-width: 640px){}
