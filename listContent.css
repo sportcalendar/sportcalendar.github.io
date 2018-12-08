@@ -2,23 +2,30 @@
 	.filterMenu{
 		display: flex;
 		justify-content: space-between;
+		white-space: nowrap; 
 		align-items: center;
-		margin-bottom: 30px;
 	}
-	.filterMenu select{
+	.filterBlock{
+		display: flex;
+		align-items: center;
+	}
+	.filterMenu ul{
 		border: none;
 		background: none;
-		vertical-align: top;
 	}
-	.filterMenu select:focus,
-	.filterMenu select:hover,
-	.filterMenu select:active{
+	.filterMenu ul:focus,
+	.filterMenu ul:hover,
+	.filterMenu ul:active{
 		outline: none;
 	}
-	.filterMenu select,
-	.filterMenu option{
-		color: var(--color_blue);
-	}	
+	.filterMenu .iconArrow{
+		width: 12px;
+		height: 12px;
+	}
+	.filterItem{
+		display: none;
+	}
+	
 /*LIST CONTENT*/
 	.blockContent{
 		display: flex;
@@ -31,11 +38,14 @@
 		flex-direction: column;
 		justify-content: space-around;
 	}
+	.infoContent strong,
+	.filterBlock strong{
+		vertical-align: top;
+		margin: 0 5px;
+	}
 	/*date EVENT*/
 	.dateContent strong{
-		color: var(--color_red);
-		vertical-align: top;
-		margin-left: 5px;
+		color: var(--color_red);		
 	}		
 /*name EVENT*/
 	.nameContent a,
@@ -45,14 +55,14 @@
 		border-bottom: none;
 		color: var(--color_blue)
 	}
-.descriptionContent{
-		font-size: 12px;
-	}
-
 
 /*---DESKTOP---*/
 @media (min-width: 1020px) and (max-width: 1450px){
-	
+/*FILTERS*/
+.filterMenu{
+	margin-bottom: 40px;
+}
+
 /*EVENT SECTION*/
 	.eventSection{
 		width: 600px;
@@ -64,6 +74,9 @@
 	height: 90px;
 	margin-bottom: 30px;
 }
+.descriptionContent{
+	font-size: 12px;
+}
 /*image EVENT*/
 .imgContent img{
 	width: 150px;
@@ -72,7 +85,6 @@
 /*RIGHT SECTION*/
 .otherChapters{
 	width: 250px;	
-
 }
 footer{
 margin-top: 20px;
@@ -82,7 +94,34 @@ border-top: 3px solid var(--color_blue);
 
 /*---TABLET---*/
 @media (min-width: 640px) and (max-width: 1020px){
+	/*EVENT SECTION*/
+	.eventSection{
+		width: 500px;
+	}
+/*LIST EVENT*/
+.eventContent{
+	display: flex;
+	justify-content: space-between;
+	height: 90px;
+	margin-bottom: 30px;
+}
+.descriptionContent{
+	font-size: 12px;
+}
+/*image EVENT*/
+.imgContent img{
+	width: 150px;
+	height: 100px;
+}
+/*RIGHT SECTION*/
+.otherChapters{
+	width: 200px;	
 
+}
+footer{
+margin-top: 20px;
+border-top: 3px solid var(--color_blue);
+}	
 }
 
 /*---MOBILE---*/
@@ -92,6 +131,12 @@ border-top: 3px solid var(--color_blue);
 	width: 120px;
 	height: 80px;
 }
+
+.infoContent {
+	width: 60%;
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
 }
 
-	
+}
