@@ -21,16 +21,8 @@
 	.filterMenu .iconArrow{
 		width: 12px;
 		height: 12px;
-	}
-	
-	
+	}	
 /*LIST CONTENT*/
-	.blockContent{
-		display: flex;
-		justify-content: space-between;
-		height: 100px;
-		margin-bottom: 30px;
-	}
 	.infoContent{
 		display: flex;
 		flex-direction: column;
@@ -54,6 +46,14 @@
 		color: var(--color_blue)
 	}
 
+
+/*modal*/
+	.dateFilter .modal,
+	.locFilter .modal,
+	.categoryFilter .modal{
+		display: none;
+	}
+
 /*---DESKTOP---*/
 @media (min-width: 1020px) and (max-width: 1450px){
 /*FILTERS*/
@@ -61,55 +61,46 @@
 			margin-bottom: 40px;
 		}
 		
-		/*modal*/
-		.dateFilter .modal,
-		.locFilter .modal,
-		.categoryFilter .modal{
-		display: none;
-		}
-		.modal .filterItem{
-			padding: 5px 0;
-		}
-		/*categoryFilter*/
-		.categoryFilter .filterContent{
-			display: flex;		
-		}
-		.categoryFilter .filterContent li{
-			margin-right: 20px;
-		}
-		/*locationFilter*/
-		.locFilter .filterContent{
-			display: flex;		
-		}
-		.locFilter .filterContent li{
-			margin-right: 15px;
-		}
-		/*dateFilter*/
-		.dateFilter .filterItem{
-			font-size: 16px;
-		}
-		.dateFilter .seasonItem{
-			padding: 18px;
-			display: flex;
-			justify-content: space-between;
-		}
-		.dateFilter .filterHeader{
-			
-		}
-
+				/*modal*/
+				.modal .filterItem{
+					padding: 5px 0;
+				}
+				/*categoryFilter*/
+				.categoryFilter .filterContent{
+					display: flex;		
+				}
+				.categoryFilter .filterContent li{
+					margin-right: 20px;
+				}
+				/*locationFilter*/
+				.locFilter .filterContent{
+					display: flex;		
+				}
+				.locFilter .filterContent li{
+					margin-right: 15px;
+				}
+				/*dateFilter*/
+				.dateFilter .filterItem{
+					font-size: 16px;
+				}
+				.dateFilter .seasonItem{
+					padding: 18px;
+					display: flex;
+					justify-content: space-between;
+				}
 		
 
 /*EVENT SECTION*/
 	.eventSection{
 		width: 600px;
 	}
-/*LIST EVENT*/
-.eventContent{
-	display: flex;
-	justify-content: space-between;
-	height: 90px;
-	margin-bottom: 30px;
-}
+	.blockContent{
+		display: flex;
+		justify-content: space-between;
+		height: 100px;
+		margin-bottom: 30px;
+	}
+
 .descriptionContent{
 	font-size: 12px;
 }
@@ -136,10 +127,10 @@ border-top: 3px solid var(--color_blue);
 		width: 500px;
 	}
 /*LIST EVENT*/
-.eventContent{
+.blockContent{
 	display: flex;
 	justify-content: space-between;
-	height: 90px;
+	height: 100px;
 	margin-bottom: 30px;
 }
 .descriptionContent{
@@ -167,11 +158,18 @@ border-top: 3px solid var(--color_blue);
 	.filterMenu{
 		margin-bottom: 40px;
 	}
+
+/*LIST CONTENT*/
+.blockContent{
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 30px;
+}
 /*image EVENT*/
 	.imgContent img{
-		width: 120px;
-		height: 80px;
+		width: 100%;
 	}
+	
 
 	.infoContent {
 		width: 60%;
