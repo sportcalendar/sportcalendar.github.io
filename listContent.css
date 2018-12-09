@@ -43,7 +43,6 @@
 	.nameContent a:active{
 		font-weight: bold;
 		border-bottom: none;
-		color: var(--color_blue)
 	}
 
 
@@ -165,17 +164,22 @@ border-top: 3px solid var(--color_blue);
 	flex-direction: column-reverse;
 	margin-bottom: 30px;
 }
+.infoContent {
+	width: 100%;
+	margin: 0 10px ;
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
+}
 /*image EVENT*/
 	.imgContent img{
 		width: 100%;
 	}
+	.nameContent h2{
+		font-weight: bold;
+	}
 	
 
-	.infoContent {
-		width: 60%;
-		overflow: hidden; 
-		white-space: nowrap; 
-		text-overflow: ellipsis; 
-	}
+	
 
 }
