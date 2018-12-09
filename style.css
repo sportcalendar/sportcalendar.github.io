@@ -7,18 +7,13 @@
 }
 *{
 	box-sizing: border-box;
-	font-family: "Tahoma";
-	
+	font-family: "Tahoma";	
 	color: var(--color_black);
 	text-decoration: none;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	letter-spacing: .015em;
-}
-h2{
-	font-size: 18px;
-	font-weight: normal;
 }
 * .icon{
 	width: 16px;
@@ -79,6 +74,10 @@ h2{
 	.container{
 		font-size: 14px;
 	}
+	h2{
+		font-size: 18px;
+		font-weight: normal;
+	}
 /*HEADER*/
 	.headerLogo{
 		width: 950px;
@@ -111,6 +110,10 @@ h2{
 	.container{
 		font-size: 14px;
 	}
+	h2{
+		font-size: 18px;
+		font-weight: normal;
+	}
 	/*HEADER*/
 	.headerLogo{
 		margin: 0 auto;
@@ -132,7 +135,11 @@ h2{
 /*- MOBILE -*/
 @media (min-width: 320px) and (max-width: 640px){
 	.container{
-		font-size: 15px;
+		font-size: 18px;
+	}
+	h2{
+		font-size: 22px;
+		font-weight: normal;
 	}
 	main{
 		margin: 30px 5px;
