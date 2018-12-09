@@ -165,7 +165,7 @@ border-top: 3px solid var(--color_blue);
 	margin-bottom: 30px;
 }
 .infoContent {
-	width: 100%;
+	width: 95%;
 	margin: 0 10px ;
 	overflow: hidden; 
 	white-space: nowrap; 
