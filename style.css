@@ -2,6 +2,7 @@
 	--bg_lightgrey:#f0f0fa;
 	--red: #991516;
 	--blue: #193968;
+	--lightblue: #193968c0;
 	--black: #22344E;
 	--grey:#999;
 	--border_grey:#e2e2e2;
@@ -23,29 +24,29 @@
 	height: 16px;
 }
 /*MODAL*/
-	.modal{
-		position: fixed;
-		background: #fff;
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.082);
-	}
-	.modalClose{
-		background: #fff;
-		border: none;
-	}
-	.modalFilter{
-		top: 135px;
-		left: 50%;
+		.modal{
+			position: fixed;
+			background: #fff;
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.082);
+		}
+		.modalClose{
+			background: #fff;
+			border: none;
+		}
+		.modalFilter{
+			top: 135px;
+			left: 50%;
 
-		width: 610px;
-		height: 300px;
-		margin-left: -480px;
-		padding: 10px 10px;
-	}
-	.modal .filterHeader{
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-	}
+			width: 610px;
+			height: 300px;
+			margin-left: -480px;
+			padding: 10px 10px;
+		}
+		.modal .filterHeader{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
 
 /*HEADER*/
 	.header{
@@ -57,24 +58,49 @@
 		width: 200px;
 		margin: 10px;
 	}
-
-	/*RIGHT SECTION*/
-	.itemSection{
-		margin-bottom: 50px;		
-	} 
-	.itemSection .item{
-		display: flex;
-		align-items: center;
-		margin-bottom: 10px;
+/*RIGHT SECTION*/
+		.otherSide{
+			width: 250px;
+		}
+		.itemSection{
+			margin-bottom: 50px;		
+		} 
+		.itemSection .item{
+			display: flex;
+			align-items: center;
+		}
+	/*top content*/
+	.itemSection .contentRightside{
+		width: 215px;
 	}
-	.itemSection p{
-		margin-left: 5px;
-		vertical-align: center;
-	}				
+	.itemSection .iconRightside{
+		width: 35px;
+	}
+	/*quickNavigation*/
+	.quickNavigation .item{
+		margin-bottom: 15px;
+	}
+	.descriptionContent{
+		font-size: 12px;
+		line-height: 15px;
+	}	
+	.quickNavigation h2 strong{
+	}
+	.quickNavigation svg{
+		fill:var(--border_grey);
+		width: 22px;
+		height: 22px;
+	}
+	.topContent svg{
+		fill:var(--border_grey);
+		width: 15px;
+		height: 15px;
+	}		
 
 
 /*- DESKTOP -*/
 @media (min-width: 1020px) and (max-width: 1450px){
+	
 	.container{
 		font-size: 14px;
 	}
@@ -84,12 +110,12 @@
 	}
 /*HEADER*/
 	.headerLogo{
-		width: 950px;
+		width: 930px;
 		margin: 0 auto;
 	}	
 /*MAIN*/
 	main{
-		width: 950px;
+		width: 900px;
 		margin: 0 auto;
 		padding: 40px 0;
 		display: flex;
@@ -97,11 +123,10 @@
 	}
 	.contentSection{
 		width: 600px;
-		background: #fff;
+		
 	}
-	/*RIGHT SECTION*/
-	.itemSection p{
-	}
+	
+	
 }
 
 /*- TABLET -*/
@@ -147,10 +172,10 @@
 		background: var(--bg_lightgrey);
 	}
 	.container{
-		font-size: 17px;
+		font-size: 16px;
 	}
 	h2{
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: normal;
 	}
 	main{
