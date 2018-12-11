@@ -22,6 +22,7 @@
 * .icon{
 	width: 16px;
 	height: 16px;
+	fill: var(--blue);
 }
 /*MODAL*/
 		.modal{
@@ -58,6 +59,19 @@
 		width: 200px;
 		margin: 10px;
 	}
+	.dateContent svg{
+		fill: var(--red);
+	}
+	.locationContent svg{
+		fill: var(--blue);
+	}
+/*FILTERS*/
+	.filterBlock svg{
+		fill: var(--blue);
+		margin-left: 3px;
+		width: 14px;
+		height: 14px;
+	}
 /*RIGHT SECTION*/
 		.otherSide{
 			width: 250px;
@@ -91,11 +105,7 @@
 		width: 22px;
 		height: 22px;
 	}
-	.topContent svg{
-		fill:var(--border_grey);
-		width: 15px;
-		height: 15px;
-	}		
+		
 
 
 /*- DESKTOP -*/
@@ -122,10 +132,8 @@
 		justify-content: space-between;
 	}
 	.contentSection{
-		width: 600px;
-		
+		width: 600px;		
 	}
-	
 	
 }
 
