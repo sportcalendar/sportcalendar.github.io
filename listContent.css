@@ -27,12 +27,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-	}
-	.infoContent strong,
-	.filterBlock strong{
-		vertical-align: top;
-		margin-left: 2px;
-	}
+		width: 100%;
+		padding-right: 10px;
+	}	
 	/*date EVENT*/
 	.dateContent strong{
 		color: var(--red);		
@@ -45,6 +42,20 @@
 			border-bottom: none;
 			color: var(--blue);
 		}
+		.blockContent .bottomContent{
+			display: flex;
+			justify-content: space-between;
+			vertical-align: center;
+		}
+		.blockContent .bottomContent .leftSide{
+			display: flex;
+		}
+		.blockContent .bottomContent 
+		.leftSide .iconItem{
+			margin-right: 50px;
+		}
+		
+	
 
 /*modal*/
 	.dateFilter .modal,
@@ -99,16 +110,17 @@
 		display: flex;
 		justify-content: space-between;
 		height: 100px;
-		margin-bottom: 50px;
-	}
+		margin-bottom: 40px;
+	}	
 	.nameContent h2{
 		font-weight: bold;
 	}
+	hr{
+		border:none!important;		
+	}
 /*image EVENT*/
 	.imgContent {
-		width: 150px;
-		height: 100px;
-		margin-right: 20px;
+		width: 230px;
 	}
 	.imgContent img{
 		width: 100%;
@@ -132,12 +144,21 @@
 		flex-direction: column-reverse;
 		margin-bottom: 20px;
 		border-bottom: 1px solid var(--border_grey);
-	}
+	}	
 	.infoContent{
 		padding: 10px;
 	}
 	.descriptionContent{
 		font-size: 16px;
+	}
+	hr{
+		background:var(--border_grey);
+		border:none!important;
+		height: 1px;
+		margin-top: 5px;
+	}
+	.blockContent .bottomContent {
+		margin-top: 10px;
 	}
 	/*image EVENT*/
 	.imgContent {
@@ -164,7 +185,8 @@
 	background: #fff;
 	border-bottom: 1px solid var(--border_grey);
 }
-.infoContent p{
+.infoContent p,
+.infoContent h2{
 	width: 100%;
 	margin: 0 10px 0 0;
 	overflow: hidden; 
@@ -172,7 +194,16 @@
 	text-overflow: ellipsis; 
 }
 .infoContent{
-	padding: 10px;
+	padding: 10px ;	
+}
+hr{
+	background:var(--border_grey);
+	border:none!important;
+	height: 1px;
+	margin-top: 5px;
+}
+.blockContent .bottomContent {
+	margin-top: 10px;
 }
 /*image EVENT*/
 	.imgContent img{
