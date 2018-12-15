@@ -3,8 +3,7 @@
 	--red: #E54E32;
 	--blue: #411A75;
 	--mint: #2BDCC5;
-	--black: #22344E;
-	--grey:#999;
+  --grey:#cfcfcf;
 	--border_grey:#e2e2e2;
 }
 *{
@@ -71,6 +70,25 @@
 		width: 14px;
 		height: 14px;
 	}
+	.listGrid{
+		display: flex;
+		justify-content: flex-end;
+		margin: 20px 0;
+	}
+	.listGrid .icon{
+		width: 18px;
+		height: 18px;
+	}
+	.listGrid .grid{
+		fill: var(--grey);
+		margin: 0 10px;
+	}
+	.listGrid .grid:hover{
+		fill: var(--mint);
+	}
+	.listGrid .list:hover{
+		fill: var(--red);
+	}
 /*RIGHT SECTION*/
 		.otherSide{
 			width: 250px;
@@ -92,7 +110,7 @@
 	}	
 	
 	.quickNavigation svg{
-		fill:var(--border_grey);
+		fill:var(--grey);
 		width: 22px;
 		height: 22px;
 	}
