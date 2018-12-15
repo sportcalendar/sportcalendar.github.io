@@ -1,15 +1,15 @@
 :root{
-	--bg_lightgrey:#f0f0fa;
-	--red: #991516;
-	--blue: #193968;
-	--lightblue: #193968c0;
+	--bg_lightgrey:#F5F5F5;
+	--red: #E54E32;
+	--blue: #69128F;
+	--mint: #2BDCC5;
 	--black: #22344E;
 	--grey:#999;
 	--border_grey:#e2e2e2;
 }
 *{
 	box-sizing: border-box;
-	font-family: "Helvetica";	
+	font-family: "Helvetica", sans-serif, Arial;	
 	color: var(--blue);
 	text-decoration: none;
 	list-style-type: none;
@@ -17,7 +17,6 @@
 	margin: 0;
 	letter-spacing: .015em;
 	line-height: 25px;
-
 }
 * .icon{
 	width: 16px;
@@ -82,14 +81,7 @@
 		.itemSection .item{
 			display: flex;
 			align-items: center;
-		}
-	/*top content*/
-	.itemSection .contentRightside{
-		width: 215px;
-	}
-	.itemSection .iconRightside{
-		width: 35px;
-	}
+		}	
 	/*quickNavigation*/
 	.quickNavigation .item{
 		margin-bottom: 15px;
@@ -98,8 +90,7 @@
 		font-size: 12px;
 		line-height: 15px;
 	}	
-	.quickNavigation h2 strong{
-	}
+	
 	.quickNavigation svg{
 		fill:var(--border_grey);
 		width: 22px;
@@ -115,8 +106,7 @@
 		font-size: 14px;
 	}
 	h2{
-		font-size: 18px;
-		font-weight: normal;
+		font-size: 16px;
 	}
 /*HEADER*/
 	.headerLogo{
@@ -133,8 +123,7 @@
 	}
 	.contentSection{
 		width: 600px;		
-	}
-	
+	}	
 }
 
 /*- TABLET -*/
