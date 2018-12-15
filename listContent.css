@@ -50,6 +50,10 @@
 	.bottomContent svg{
 		fill:var(--red);
 	}	
+	/*iemag EVENT*/
+	.blockContent .imgContent{
+		background: url("img/pics/eventPics/logo2x2.png") no-repeat center;
+	}
 /*RIGHT side content*/
 .itemSection .contentRightside{
 	width: 215px;
@@ -74,24 +78,12 @@ body{
 		margin-bottom: 20px;
 		width: 100%;		 
 		text-transform: uppercase;
-	}	
-	.listGrid{
-		display: flex;
-		justify-content: flex-end;
-		margin: 20px 0;
-	}
-	.listGrid .icon{
-		width: 18px;
-		height: 18px;
-	}
-	.listGrid .grid{
-		fill: var(--red);
-		margin: 0 10px;
-	}
-			/*modal*/
-			.modal .filterItem{
-				padding: 5px 0;
-			}
+	}		
+
+/*modal*/
+		.modal .filterItem{
+			padding: 5px 0;
+		}
 			/*categoryFilter*/
 			.categoryFilter .filterContent{
 				display: flex;		
@@ -122,9 +114,14 @@ body{
 	justify-content: space-between;	
 	margin-bottom: 15px;
 	border-bottom: 1px solid var(--border_grey);
-	background-color: #fff;
-	
+	background-color: #fff;	
 }	
+
+.blockContent:hover{
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.123);
+	transition: 200ms linear all;
+}
+
 /*EVENT SECTION*/	
 .infoContent{
 	width: 450px;		
@@ -162,7 +159,7 @@ body{
 	margin-right: 50px;
 	}	
 	.blockContent .bottomContent svg{
-		fill: var(--blue);
+		fill: var(--grey);
 	}
 	
 /*image EVENT*/
@@ -220,7 +217,7 @@ hr{
 
 /*FILTERS*/
 .filterMenu{
-	margin-bottom: 30px;		
+	margin-bottom: 20px;		
 }
 /*LIST CONTENT*/
 .blockContent{
@@ -238,8 +235,7 @@ border-radius: 20px 0 0 20px;
 .locationContent strong{
 color: #fff;			
 }
-/*date EVENT*/		
-
+/*date EVENT*/	
 .dateContent,
 .locationContent{
 padding: 5px 10px;
