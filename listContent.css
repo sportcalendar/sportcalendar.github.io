@@ -26,7 +26,7 @@
 .infoContent{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 100%;
 	padding: 0;		
 }	
@@ -39,9 +39,6 @@
 		color: var(--red);
 	}
 /*name EVENT*/
-	.nameContent{
-		margin: 10px 0;
-	}
 	.nameContent a,
 	.nameContent a:visited,
 	.nameContent a:active{
@@ -70,14 +67,22 @@
 /*---DESKTOP---*/
 @media (min-width: 1020px) and (max-width: 1450px){
 body{
-	background: var(--lightgrey);
+	background: var(--bg_lightgrey);
 }
 /*FILTERS*/
 	.filterMenu{
 		margin-bottom: 40px;
-		width: 400px;		 
+		width: 100%;		 
 		text-transform: uppercase;
 	}	
+	.listGrid .icon{
+		width: 20px;
+		height: 20px;
+	}
+	.listGrid .grid{
+		fill: var(--grey);
+		margin: 0 5px;
+	}
 			/*modal*/
 			.modal .filterItem{
 				padding: 5px 0;
@@ -108,12 +113,15 @@ body{
 
 .blockContent{
 	display: flex;
+	flex-direction: row-reverse;
 	justify-content: space-between;	
-	padding: 10px 0;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
 }	
 /*EVENT SECTION*/	
 .infoContent{
-	width: 420px;	
+	width: 410px;		
 }
 /*top EVENT*/
 
@@ -130,6 +138,9 @@ body{
 	justify-content: space-between;
 	vertical-align: center;		
 	}
+	.blockContent .bottomContent svg{
+		fill: var(--border_grey);
+	}
 	.blockContent .bottomContent .leftSide{
 	display: flex;
 	}
@@ -139,7 +150,7 @@ body{
 	}	
 /*image EVENT*/
 .imgContent {
-	width: 160px;
+	width: 150px;
 	height: 100px;
 }
 .imgContent img{
