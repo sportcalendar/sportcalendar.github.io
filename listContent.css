@@ -71,17 +71,22 @@ body{
 }
 /*FILTERS*/
 	.filterMenu{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		width: 100%;		 
 		text-transform: uppercase;
 	}	
+	.listGrid{
+		display: flex;
+		justify-content: flex-end;
+		margin: 20px 0;
+	}
 	.listGrid .icon{
-		width: 20px;
-		height: 20px;
+		width: 18px;
+		height: 18px;
 	}
 	.listGrid .grid{
-		fill: var(--grey);
-		margin: 0 5px;
+		fill: var(--red);
+		margin: 0 10px;
 	}
 			/*modal*/
 			.modal .filterItem{
@@ -115,16 +120,27 @@ body{
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;	
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid var(--border_grey);
 	background-color: #fff;
-	padding: 10px;
+	
 }	
 /*EVENT SECTION*/	
 .infoContent{
-	width: 410px;		
+	width: 450px;		
+	padding: 5px 0 10px 10px;
 }
 /*top EVENT*/
 
+/*location EVENT*/
+.locationContent{
+	background-color: var(--mint);	
+	border-radius: 25px 0 0 25px;			
+	}	
+	.locationContent strong{
+	color: #fff;		
+	padding: 10px;	
+	}
 /*name EVENT*/
 .nameContent h2{
 	font-weight: bold;
@@ -137,10 +153,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	vertical-align: center;		
-	}
-	.blockContent .bottomContent svg{
-		fill: var(--border_grey);
-	}
+	}	
 	.blockContent .bottomContent .leftSide{
 	display: flex;
 	}
@@ -148,10 +161,14 @@ body{
 	.leftSide .iconItem{
 	margin-right: 50px;
 	}	
+	.blockContent .bottomContent svg{
+		fill: var(--blue);
+	}
+	
 /*image EVENT*/
 .imgContent {
-	width: 150px;
-	height: 100px;
+	width: 170px;
+	height: 110px;
 }
 .imgContent img{
 	width: 100%;
@@ -196,7 +213,6 @@ hr{
 	.imgContent img{
 		width: 100%;
 	}
-
 }
 
 /*---MOBILE---*/
@@ -222,6 +238,8 @@ border-radius: 20px 0 0 20px;
 .locationContent strong{
 color: #fff;			
 }
+/*date EVENT*/		
+
 .dateContent,
 .locationContent{
 padding: 5px 10px;
