@@ -227,6 +227,10 @@ body{
 .container{
 	font-size: 16px;
 }
+h1{
+	margin: 15px auto;
+	width: 260px;
+}
 h2{
 	font-size: 18px;
 	font-weight: normal;
@@ -234,15 +238,21 @@ h2{
 /*FILTERS*/
 .filterMenu{
 display: flex;
-flex-direction: column;
 text-align: center;
 margin: 20px 0 0 0;
 }
 .filterBlock {
+	width: 30%;
 	padding: 3px; 
 	margin: 5px;	
 	background-color: #fff;
+	
+		white-space: nowrap; 
+		align-items: center;
+		overflow: hidden;		
+		text-overflow: ellipsis;
 }
+
 .filterBlock .nameFilter{
 font-weight: bold;
 }
