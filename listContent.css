@@ -239,13 +239,20 @@ text-align: center;
 margin: 20px 0 0 0;
 }
 .filterBlock {
-	border: 2px solid var(--blue);
-	border-radius: 20px;
 	padding: 3px; 
 	margin: 5px;	
+	background-color: #fff;
 }
 .filterBlock .nameFilter{
-font-weight: bold;}
+font-weight: bold;
+}
+.listGrid{
+	display: flex;
+	justify-content: flex-end;
+}
+.listGrid svg{
+margin: 5px;
+}
 
 /*LIST CONTENT*/
 .blockContent{
@@ -273,8 +280,6 @@ padding: 5px 10px;
 /*date EVENT*/	
 .dateContent{
 background-color: var(--blue);
-opacity: 0.8;
-
 position: absolute;
 top: 0;
 }
@@ -328,10 +333,10 @@ margin: 10px;
 .imgContent img{
 	width: 100%;
 }	
-.blockContent .imgContent{
+/* .blockContent .imgContent{
 	background: url("img/pics/logo2x2.png") no-repeat right 50px top 30px;
 	background-size: 200px;
-}
+} */
 /*RIGHT SECTION*/
 .otherSide{display: none;}
 .itemSection p{
