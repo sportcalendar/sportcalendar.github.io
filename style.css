@@ -3,7 +3,7 @@
 	--border_grey:#e2e2e2;
 	--grey:#cfcfcf;
 	--red: #FB4148;
-	--blue: #004A82;
+	--blue: #1C2957;
 	--mint: #00A0E3;	
 	--yellow: #F7C51E;	
 }
@@ -46,31 +46,31 @@
 			flex-direction: row-reverse;
 			justify-content: space-between;
 		}
-/*HEADER*/
-	.header{
-		height: 70px;
-		background-color: var(--blue);
-	}
-	.headerLogo svg{
-		height: 50px;
-		width: 200px;
-		margin: 10px;
-	}	
-	.locationContent svg{
-		fill: var(--blue);
-	}
+
 	
 /*- DESKTOP -*/
 @media (min-width: 1020px) and (max-width: 1450px){	
 	.container{
 		font-size: 14px;
 	}
+	/*HEADER*/
+	.header{
+		height: 70px;
+	}
+	.headerLogo svg{
+		height: 50px;
+		width: 200px;
+		margin: 10px 0;
+	}	
+	.locationContent svg{
+		fill: var(--blue);
+	}
 	h2{
 		font-size: 16px;
 	}
 /*HEADER*/
 	.headerLogo{
-		width: 930px;
+		width: 950px;
 		margin: 0 auto;
 	}	
 /*MAIN*/
@@ -200,5 +200,33 @@
 
 /*- MOBILE -*/
 @media (min-width: 320px) and (max-width: 640px){
+	header{
+		width: 100%;
+		font-size: 14px;	
+		background-color: var(--blue);
+		padding: 10px;
+	}
+	
+	.headerLogo svg{
+		height: 40px;
+		margin: 0 auto;
+		width: 200px;
+
+	}	
+	.headerLogo{
+		width: 200px;
+		margin: 0 auto;
+	}
+	.headerMenu{
+		display: flex;
+		justify-content: space-between;		
+	}
+	.headerMenu a,
+	.headerMenu a:visited,
+	.headerMenu a:active{
+		border-bottom: none;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: .7px;
 	
 }
