@@ -1,20 +1,42 @@
-.checkboxMenu{
+
+.listGrid svg{
+	margin: 7px 5px 0 0;
+	}
+	.checkboxMenu{
 	display: flex;
 	justify-content: space-between;
+	padding: 10px 0;
 }
-.checkboxItem{
+.checkbox{
 	text-transform: uppercase;
-	padding: 0;
-}
-/*LIST CONTENT*/
-.infoContent{
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-	padding: 0;		
-}	
-	/*top event content*/	
+	padding: 0;
+	align-items: center;
+	position:relative;
+	padding-left:25px;
+	font-size: 13px;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:'';
+	display:block;
+	height:12px;
+	width:12px;
+	outline:1px solid #939598;
+	position:absolute;
+	top:20%;
+	right: 90%;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	outline:1px solid #939598;
+	border:2px solid #fff;
+	width:10px;
+	height:10px;
+	background-color: var(--grey);
+}
+/*top event content*/	
 		.topEventContent{
 			display: flex;
 			justify-content: space-between;
@@ -43,14 +65,20 @@
 			letter-spacing: .050em;
 			font-size: 13px;
 		}
-		/*bottom event content*/
-		.bottomContent{
-			font-size: 12px;
-			color: var(--grey);
-		}	
+/*bottom event content*/
 		.bottomContent svg{
 			fill:var(--grey);
-		}		
+			margin-right: 5px;
+		}	
+		.blockContent .bottomContent .iconItem{
+			display: flex;
+			align-items: center;
+			color: var(--grey);
+		}	
+		.blockContent .bottomContent span{
+			font-size: 12px;	
+			color: var(--grey);		
+		}	
 
 /*RIGHT SIDE SECTION*/
 .itemSection .contentRightside{
@@ -77,7 +105,7 @@ body{
 	justify-content: space-between;
 	white-space: nowrap; 
 	align-items: center;
-	padding: 0 0 50px 0;
+	padding: 0 0 20px 0;
 }	
 .filterBlock{
 	background-color: var(--border_grey);
@@ -93,16 +121,6 @@ body{
 }
 .filterBlock svg{
 	height: 13px;
-}
-.checkboxMenu{
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-}
-.checkboxItem{
-	width: 200px;
-	padding: 3px 15px;
-	text-transform: uppercase;
 }
 	/*listGrid*/
 	.listGrid{
@@ -173,6 +191,9 @@ body{
 	transition: 200ms linear all;
 }
 .infoContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 450px;		
 	padding: 10px 0 0 15px;
 }
@@ -198,14 +219,13 @@ body{
 }
 .blockContent .bottomContent{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding:0 10px 0 0;
-	}	
+	}		
 	.blockContent .bottomContent .nameBottomItem{
 		font-size: 13px;
 		color: var(--grey);
-	}
-		
+	}		
 	.blockContent .bottomContent svg{
 		fill: var(--grey);
 	}
@@ -226,7 +246,7 @@ body{
 }
 
 /*---TABLET---*/
-@media (min-width: 640px) and (max-width: 1024px){
+@media (min-width: 640px) and (max-width: 1020px){
 
 /*EVENT SECTION*/	
 .contentSection{
@@ -376,20 +396,18 @@ margin: 20px 0 10px 0 ;
 .filterBlock .nameFilter{
 font-weight: bold;
 }
-.listGrid{
-	display: flex;
-	justify-content: flex-end;
+.checkboxMenu{	
+	margin: 0 5px;
 }
-.listGrid svg{
-margin: 5px;
-}
-.checkboxMenu{
-padding:10px;
-margin-bottom: 10px;
-}
-.checkboxItem{
+.checkbox{
+	text-transform: none;
 	font-size: 14px;
 }
+.checkbox label:after {
+	top:28%;
+	right: 85%;
+}
+
 
 /*LIST CONTENT*/
 .blockContent{
@@ -433,37 +451,32 @@ text-align: center;
 	text-transform: uppercase;
 }
 /*mane content*/
-.nameContent p,
-.nameContent h2{
-width: 100%;
-margin: 0 10px 0 0;
+.blockContent .nameContent {
+	margin: 0 10px;
 }
 .nameContent h2{
 	font-weight: bold;
 }
 /*bottom content*/
 hr{
-background:var(--border_grey);
-border:none!important;
-height: 1px;
-margin-top: 5px;
+display: none;
 }
 .blockContent .bottomContent{
 display: flex;
 justify-content:flex-end;
-vertical-align: center;		
+vertical-align: center;
+text-align: center;		
 }
 .blockContent .bottomContent svg{
 margin-left: 30px;
 }	
-.blockContent .bottomContent,
-.blockContent .nameContent {
+.blockContent .bottomContent {
 margin: 10px;
 }
 /*image EVENT*/
 .imgContent{
 	min-width: 320px;
-	min-height: 100px;
+	min-height: 70px;
 }
 .imgContent img{
 	width: 100%;
