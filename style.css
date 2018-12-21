@@ -200,22 +200,14 @@ body{
 		display: flex;
 	}
 	.contentSection{
-		width: 60%;
-	}	
-	/*RIGHT SIDE*/
-	.otherSide{
-		width: 40%;
-		font-size: 16px;
-	}	
-	.itemSection p{
-		width: 95%;
-		overflow: hidden; 
-		white-space: nowrap; 
-		text-overflow: ellipsis; 
-	}
+		width: 62%;
+	}			
+	
 	/*RIGHT SECTION*/
 .otherSide{
-	width: 300px;
+	width: 38%;
+	font-size: 16px;
+	min-width: 280px;
 	background-color: #fff;
 
 }
@@ -226,7 +218,13 @@ body{
 			display: flex;
 			align-items: center;
 			padding: 0 20px;
-		}			
+		}	
+		.itemSection p{
+			width: 95%;
+			overflow: hidden; 
+			white-space: nowrap; 
+			text-overflow: ellipsis; 
+		}		
 	/*quickNavigation*/
 	.quickNavigation{
 		margin-top: 10px;
@@ -287,7 +285,7 @@ body{
 .anotheHeaderItem{
 	display: none;
 }
-.anotheHeaderIcon svg{
+.anotheHeaderIcon{
 	fill: #fff;
 }
 }
