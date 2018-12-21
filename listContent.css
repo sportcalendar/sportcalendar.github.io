@@ -76,7 +76,7 @@
 			color: var(--grey);
 		}	
 		.blockContent .bottomContent span{
-			font-size: 12px;	
+			font-size: 14px;	
 			color: var(--grey);		
 		}	
 
@@ -220,12 +220,8 @@ body{
 .blockContent .bottomContent{
 	display: flex;
 	justify-content: space-around;
-	padding:0 10px 0 0;
-	}		
-	.blockContent .bottomContent .nameBottomItem{
-		font-size: 13px;
-		color: var(--grey);
-	}		
+	padding-bottom: 5px;
+	}			
 	.blockContent .bottomContent svg{
 		fill: var(--grey);
 	}
@@ -407,49 +403,47 @@ font-weight: bold;
 	top:28%;
 	right: 85%;
 }
-
-
 /*LIST CONTENT*/
-.blockContent{
-display: flex;
-flex-direction: column-reverse;
-	margin-bottom: 15px;
-	background: #fff;
-	border-bottom: 1px solid var(--border_grey);
-	position: relative;
-}
-.dateContent,
-.locationContent{
-padding: 5px 10px;
-}
-/*location EVENT*/		
-	.locationContent{	
-	/* background-color: var(--blue);	
-	border-radius: 20px 0 0 20px;			 */
-	}	
-.locationContent strong{
+	.blockContent{
+	display: flex;
+	flex-direction: column-reverse;
+		margin-bottom: 15px;
+		background: #fff;
+		border-bottom: 1px solid var(--border_grey);
+		position: relative;
+	}
+	.dateContent,
+	.locationContent{
+	padding: 5px 10px;
+	}
+	/*location EVENT*/		
+		.locationContent{	
+		/* background-color: var(--blue);	
+		border-radius: 20px 0 0 20px;			 */
+		}	
+	.locationContent strong{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	/*date EVENT*/	
+	.dateContent{
+	background-color: var(--blue);
 	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-/*date EVENT*/	
-.dateContent{
-background-color: var(--blue);
-position: absolute;
-top: 0;
-width: 75px;
-text-align: center;
-}
-.dateContent strong{
-	color: #fff;
-	font-size: 16px;
-	letter-spacing: 1.7px;
-}
-.dateContent p{
-	color: #fff;
-	font-size: 14px;
-	text-transform: uppercase;
-}
+	top: 0;
+	width: 75px;
+	text-align: center;
+	}
+	.dateContent strong{
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 1.7px;
+	}
+	.dateContent p{
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
 /*mane content*/
 .blockContent .nameContent {
 	margin: 0 10px;
