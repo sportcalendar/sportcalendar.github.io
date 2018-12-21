@@ -42,7 +42,12 @@
             <ul class="headerMenu">
                 <li><a href="#" class="social-item calendar">календар подій</a></li>
                 <li><a href="#" class="social-item">календар турів</a></li>
-                <li><a href="#" class="social-item">інше</a></li>
+                <li>
+                    <a href="#" class="social-item anotheHeaderItem">інше</a>
+                    <a href="#" class="social-item anotheHeaderIcon">
+                        <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><g><circle cx="256" cy="256" r="64"/><circle cx="256" cy="448" r="64"/><circle cx="256" cy="64" r="64"/></g></g></g></svg>
+                    </a>
+                </li>
             </ul>  
         </div>                
     </header>    
@@ -50,9 +55,9 @@
     <main>
         <!--EVENT SECTION-->
         <section class="contentSection">
+            
             <!-- FILTERS -->
             <div class="filterMenu">
-
                 <div class="categoryFilter filterBlock">
                     <strong class="nameFilter">Веслування</strong> 
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 201.458 201.457" style="enable-background:new 0 0 201.458 201.457;" xml:space="preserve"> <g>      <path d="M193.177,46.233l8.28,8.28L100.734,155.241L0,54.495l8.28-8.279l92.46,92.46L193.177,46.233z" /></g> </svg>     
@@ -110,8 +115,7 @@
                             </li>                                   
                         </ul>
                     </section>
-                </div>
-                
+                </div>            
                 <div class="dateFilter filterBlock">
                     <strong class="nameFilter">Місяць </strong>   
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 201.458 201.457" style="enable-background:new 0 0 201.458 201.457;" xml:space="preserve"> <g>      <path d="M193.177,46.233l8.28,8.28L100.734,155.241L0,54.495l8.28-8.279l92.46,92.46L193.177,46.233z" /></g> </svg>
@@ -155,8 +159,7 @@
                         </ul>
                     </section>                 
                    
-                </div>
-                
+                </div>                
                 <div class="locFilter filterBlock">
                     <strong class="nameFilter">Локація</strong>   
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 201.458 201.457" style="enable-background:new 0 0 201.458 201.457;" xml:space="preserve"> <g>      <path d="M193.177,46.233l8.28,8.28L100.734,155.241L0,54.495l8.28-8.279l92.46,92.46L193.177,46.233z" /></g> </svg>
@@ -215,9 +218,19 @@
                             </li>                                   
                         </ul>
                     </section>                
-                </div>                         
-                
+                </div>                      
             </div> 
+            <div class="checkboxMenu">
+                <div class="checkboxItem">
+                    <input type="checkbox" name="amauterEvent" checked>
+                    <label for="scales">Аматорські подіі</label>
+                </div>
+
+                <div class="checkboxItem">
+                    <input type="checkbox" name="profEvent">
+                    <label for="horns">Професійні події</label>
+                </div>
+            </div>
             <!-- FILTERS end-->   
 
             <!-- ListGrid -->
@@ -903,7 +916,8 @@
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve"><g>	<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" /></g></svg>                    
                     </div>
                     <div class="contentRightside">
-                        <strong><a href="#">Каяк-події у Фейсбуці</a></strong>
+                        <strong><a href="https://www.facebook.com/groups/KayakSUPeventsUA/">Каяк-події у Фейсбуці</a></strong>
+                    
                     </div>
                 </li>
                 <li class="item">
