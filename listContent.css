@@ -396,8 +396,6 @@ font-weight: bold;
 	margin: 0 5px;
 }
 .checkbox{
-	text-transform: none;
-	font-size: 14px;
 }
 .checkbox label:after {
 	top:28%;
