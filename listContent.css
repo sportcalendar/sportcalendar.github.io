@@ -35,9 +35,13 @@
 			letter-spacing: .050em;
 			font-size: 13px;
 		}
-		/*bottom event content*/	
+		/*bottom event content*/
+		.bottomContent{
+			font-size: 12px;
+			color: var(--grey);
+		}	
 		.bottomContent svg{
-			fill:var(--red);
+			fill:var(--grey);
 		}		
 
 /*RIGHT SIDE SECTION*/
@@ -65,8 +69,23 @@ body{
 	justify-content: space-between;
 	white-space: nowrap; 
 	align-items: center;
-	padding: 10px 0 50px 0;
+	padding: 0 0 50px 0;
 }	
+.filterBlock{
+	background-color: var(--border_grey);
+	width: 28%;
+	border-radius: 20px;
+	padding: 3px 15px;
+	text-transform: uppercase;
+}
+.filterBlock{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.filterBlock svg{
+	height: 13px;
+}
 	/*listGrid*/
 	.listGrid{
 		display: flex;
@@ -137,8 +156,19 @@ body{
 }
 .infoContent{
 	width: 450px;		
-	padding-left: 15px;}
+	padding: 10px 0 0 15px;
+}
 /*top EVENT*/
+.dateContent{
+	display: flex;
+	font-weight: bold;
+	background-color: var(--border_grey);
+	border-radius: 20px;
+	padding: 0 8px;
+}
+.dateContent strong{
+	margin-right: 5px;
+}
 
 /*name EVENT*/
 .nameContent h2{
@@ -151,16 +181,13 @@ body{
 .blockContent .bottomContent{
 	display: flex;
 	justify-content: space-between;
-	vertical-align: center;		
-	padding:0 10px 10px 0;
+	padding:0 10px 0 0;
 	}	
-	.blockContent .bottomContent .leftSide{
-	display: flex;
+	.blockContent .bottomContent .nameBottomItem{
+		font-size: 13px;
+		color: var(--grey);
 	}
-	.blockContent .bottomContent 
-	.leftSide .iconItem{
-	margin-right: 50px;
-	}	
+		
 	.blockContent .bottomContent svg{
 		fill: var(--grey);
 	}
@@ -187,36 +214,103 @@ body{
 .contentSection{
 	margin-right: 40px;
 }		
+.filterMenu{
+	display: flex;
+	text-align: center;
+	margin: 0 0 30px 0 ;
+	}
+	.filterBlock {
+		width: 30%;
+		padding: 3px; 
+		margin: 5px;	
+		background-color:var(--border_grey);
+		border-radius: 20px;
+			white-space: nowrap; 
+			align-items: center;
+			overflow: hidden;		
+			text-overflow: ellipsis;
+	}
+	.filterBlock svg{
+		display: none;
+	}
+	.filterBlock .nameFilter{
+	font-weight: bold;
+	}
 /*LIST CONTENT*/
-.listContent{
-	margin: 30px 0;
-}
 .blockContent{
-	display: flex;		
-	background: #fff;
+	display: flex;
 	flex-direction: column-reverse;
-	margin-bottom: 20px;
-	border-bottom: 1px solid var(--border_grey);
-}		
-.descriptionContent{
-	font-size: 16px;
-}
-hr{
-	background:var(--border_grey);
-	border:none!important;
-	height: 1px;
-	margin-top: 5px;
-}
-.blockContent .bottomContent {
+		margin-bottom: 15px;
+		background: #fff;
+		border-bottom: 1px solid var(--border_grey);
+		position: relative;
+	}
+	.dateContent,
+	.locationContent{
+	padding: 5px 10px;
+	}
+	/*location EVENT*/		
+		.locationContent{	
+		/* background-color: var(--blue);	
+		border-radius: 20px 0 0 20px;			 */
+		}	
+	.locationContent strong{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	/*date EVENT*/	
+	.dateContent{
+	background-color: var(--blue);
+	position: absolute;
+	top: 0;
+	width: 75px;
+	text-align: center;
+	}
+	.dateContent strong{
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 1.7px;
+	}
+	.dateContent p{
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	/*mane content*/
+	.nameContent p,
+	.nameContent h2{
+	width: 100%;
+	margin: 0 10px 0 0;
+	}
+	.nameContent h2{
+		font-weight: bold;
+	}
+	/*bottom content*/
+	hr{
+	display: none;
+	}
+	.blockContent .bottomContent{
+	display: flex;
+	justify-content:flex-end;
+	vertical-align: center;		
+	}
+	.blockContent .bottomContent svg{
+	margin-left: 30px;
+	}	
+	.blockContent .bottomContent,
+	.blockContent .nameContent {
 	margin: 10px;
-}
+	}
 /*image EVENT*/
-	.imgContent {
-		width: 100%;
-	}
-	.imgContent img{
-		width: 100%;
-	}
+.imgContent{
+	min-width: 320px;
+	min-height: 100px;
+}
+.imgContent img{
+	width: 100%;
+}	
+	
 }
 
 /*---MOBILE---*/
@@ -225,8 +319,8 @@ body{
 	background: var(--bg_lightgrey);
 }
 .container{
-	font-size: 16px;
-}
+	font-size: 16px;}
+
 h2{
 	font-size: 18px;
 	font-weight: normal;
@@ -235,20 +329,22 @@ h2{
 .filterMenu{
 display: flex;
 text-align: center;
-margin: 20px 0 0 0;
+margin: 30px 0 ;
 }
 .filterBlock {
 	width: 30%;
 	padding: 3px; 
 	margin: 5px;	
-	background-color: #fff;
-	
+	background-color:var(--border_grey);
+	border-radius: 20px;
 		white-space: nowrap; 
 		align-items: center;
 		overflow: hidden;		
 		text-overflow: ellipsis;
 }
-
+.filterBlock svg{
+	display: none;
+}
 .filterBlock .nameFilter{
 font-weight: bold;
 }
@@ -288,10 +384,8 @@ padding: 5px 10px;
 background-color: var(--blue);
 position: absolute;
 top: 0;
-}
-.dateContent{
-	width: 75px;
-	text-align: center;
+width: 75px;
+text-align: center;
 }
 .dateContent strong{
 	color: #fff;
