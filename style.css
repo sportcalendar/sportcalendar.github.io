@@ -4,7 +4,7 @@
 	--grey:#cfcfcf;
 	--red: #FB4148;
 	--blue: #1C2957;
-	--mint: #00A0E3;	
+	--mint: #F3F7FA;	
 	--yellow: #F7C51E;	
 }
 *{
@@ -22,6 +22,9 @@
 	height: 16px;
 	fill: var(--blue);
 }
+body{
+	background: var(--bg_lightgrey);
+}	
 /*MODAL*/
 		.modal{
 			position: fixed;
@@ -51,28 +54,51 @@
 /*- DESKTOP -*/
 @media (min-width: 1020px) and (max-width: 1450px){	
 	.container{
-		font-size: 14px;
+		font-size: 14px;		
 	}
+	
 	/*HEADER*/
-	.header{
-		height: 70px;
-	}
-	.headerLogo svg{
-		height: 50px;
-		width: 200px;
-		margin: 10px 0;
+	header{
+		display: flex;
+		justify-content: space-between;		
+		width: 100%;
+		font-size: 14px;	
+		background-color: var(--blue);
+		padding: 15px 40px;
 	}	
+	.headerLogo svg{
+		height: 45px;
+		margin: 0 auto;
+		width: 200px;
+	}	
+	.headerLogo{
+		width: 200px;
+		height: 100%;
+	}
+	.headerMenu{
+		display: flex;
+		justify-content: space-between;	
+		width: 400px;	
+		align-items: bottom;
+		height: 100%;
+		margin-top: 20px;
+	}
+	.headerMenu a,
+	.headerMenu a:visited,
+	.headerMenu a:active{
+		border-bottom: none;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: .7px;	
+}
+	
 	.locationContent svg{
 		fill: var(--blue);
 	}
 	h2{
 		font-size: 16px;
 	}
-/*HEADER*/
-	.headerLogo{
-		width: 950px;
-		margin: 0 auto;
-	}	
+
 /*MAIN*/
 	main{
 		width: 950px;
@@ -135,9 +161,39 @@
 		font-weight: bold;
 	}
 	/*HEADER*/
-	.headerLogo{
-		margin: 0 auto;
+	header{
+		display: flex;
+		justify-content: space-between;		
+		width: 100%;
+		font-size: 14px;	
+		background-color: var(--blue);
+		padding: 15px 5px;
 	}	
+	.headerLogo svg{
+		height: 45px;
+		margin: 0 auto;
+		width: 200px;
+	}	
+	.headerLogo{
+		width: 200px;
+		height: 100%;
+	}
+	.headerMenu{
+		display: flex;
+		justify-content: space-between;	
+		width: 400px;	
+		align-items: bottom;
+		height: 100%;
+		margin-top: 20px;
+	}
+	.headerMenu a,
+	.headerMenu a:visited,
+	.headerMenu a:active{
+		border-bottom: none;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: .7px;	
+}
 /*MAIN*/
 	main{
 		margin: 30px 10px;
@@ -204,7 +260,7 @@
 		width: 100%;
 		font-size: 14px;	
 		background-color: var(--blue);
-		padding: 15px;
+		padding: 15px 10px;		
 	}	
 	.headerLogo svg{
 		height: 45px;
@@ -213,12 +269,13 @@
 	}	
 	.headerLogo{
 		width: 200px;
-		height: 70px;
+		height: 60px;
 		margin: 0 auto;
 	}
 	.headerMenu{
 		display: flex;
 		justify-content: space-between;		
+		
 	}
 	.headerMenu a,
 	.headerMenu a:visited,
@@ -227,5 +284,5 @@
 		text-transform: uppercase;
 		color: #fff;
 		letter-spacing: .7px;
-	
+}
 }
