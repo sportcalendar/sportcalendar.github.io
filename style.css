@@ -17,14 +17,50 @@
 	margin: 0;
 	line-height: 25px;
 }
+body{
+	background: var(--bg_lightgrey);
+}	
 * .icon{
 	width: 16px;
 	height: 16px;
 	fill: var(--blue);
 }
-body{
-	background: var(--bg_lightgrey);
-}	
+/*SPONSOR MOB*/
+.sponsorLogoMob{
+	display: flex;
+	align-items: center;
+	padding: 20px 10px ;	
+}
+.sponsorLogoMob .sponsorIcon{
+	fill:#E31E24;
+	height: 45px;
+	margin-right: 20px;
+}
+.sponsorLogoMob .sponsorContent{
+	font-size: 14px;
+}
+.sponsorLogoMob .sponsorTitle{
+	color: #E31E24;
+	font-weight: bold;
+}
+/*SPONSOR MOB*/
+.sponsorLogoDesktop{
+	display: flex;
+	padding: 20px 15px;	
+}
+.sponsorLogoDesktop .sponsorIcon{
+	fill:#E31E24;
+	height: 50px;
+	margin-right: 20px;
+}
+.sponsorLogoDesktop .sponsorIcon,
+.sponsorLogoDesktop .sponsorContent p{
+	color: #E31E24;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
 /*MODAL*/
 		.modal{
 			position: fixed;
@@ -56,7 +92,9 @@ body{
 	.container{
 		font-size: 14px;		
 	}
-	
+	.sponsorLogoMob{
+		display: none;
+	}
 	/*HEADER*/
 	header{
 		display: flex;
@@ -152,6 +190,13 @@ body{
 @media (min-width: 640px) and (max-width: 1020px){
 	body{
 		background: var(--bg_lightgrey);
+	}
+	.sponsorLogoMob{
+		display: none;
+	}
+	.sponsorLogoDesktop{
+		display: flex;
+		padding: 20px 10px;	
 	}
 	.container{
 		font-size: 17px;
@@ -254,6 +299,9 @@ body{
 
 /*- MOBILE -*/
 @media (min-width: 320px) and (max-width: 640px){
+	.sponsorLogoDesktop{
+		display: none;
+	}
 	header{
 		width: 100%;
 		font-size: 16px;	
@@ -285,7 +333,7 @@ body{
 .anotheHeaderItem{
 	display: none;
 }
-.anotheHeaderIcon{
+.anotheHeaderIcon svg{
 	fill: #fff;
 }
 }
