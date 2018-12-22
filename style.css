@@ -26,7 +26,8 @@ body{
 	fill: var(--blue);
 }
 /*SPONSOR MOB*/
-.sponsorLogoMob{
+.sponsorLogoMob,
+.sponsorLogoDesktop{
 	display: flex;
 	align-items: center;
 	padding: 20px 10px ;	
@@ -34,7 +35,7 @@ body{
 .sponsorLogoMob .sponsorIcon{
 	fill:#E31E24;
 	height: 45px;
-	margin-right: 20px;
+	margin-right: 30px;
 }
 .sponsorLogoMob .sponsorContent{
 	font-size: 14px;
@@ -43,20 +44,15 @@ body{
 	color: #E31E24;
 	font-weight: bold;
 }
-/*SPONSOR MOB*/
-.sponsorLogoDesktop{
-	display: flex;
-	padding: 20px 15px;	
-}
+/*SPONSOR DESCKTOP*/
 .sponsorLogoDesktop .sponsorIcon{
 	fill:#E31E24;
 	height: 50px;
 	margin-right: 20px;
 }
-.sponsorLogoDesktop .sponsorIcon,
-.sponsorLogoDesktop .sponsorContent p{
+ .sponsorIcon,
+ .sponsorContent p{
 	color: #E31E24;
-	font-size: 14px;
 	font-weight: bold;
 }
 
@@ -197,6 +193,10 @@ body{
 	.sponsorLogoDesktop{
 		display: flex;
 		padding: 20px 10px;	
+	}
+	
+	.sponsorContent{
+		font-size: 14px;
 	}
 	.container{
 		font-size: 17px;
