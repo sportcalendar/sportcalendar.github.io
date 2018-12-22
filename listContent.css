@@ -27,7 +27,7 @@
 	outline:1px solid #939598;
 	position:absolute;
 	top:20%;
-	right: 90%;
+	right: 85%;
 }
 .checkbox input[type=checkbox]:checked + label:after {
 	outline:1px solid #939598;
@@ -372,7 +372,7 @@ h2{
 		.filterMenu{
 		display: flex;
 		text-align: center;
-		margin: 20px 0 10px 0 ;
+		margin: 0 0 10px 0 ;
 		}
 		.filterBlock {
 			width: 30%;
