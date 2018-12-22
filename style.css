@@ -28,7 +28,7 @@ body{
 /*SPONSOR MOB*/
 .sponsorLogoMob,
 .sponsorLogoDesktop{
-	display: flex;
+	display: none;
 	align-items: center;
 	padding: 20px 10px ;	
 }
@@ -189,12 +189,7 @@ body{
 	}
 	.sponsorLogoMob{
 		display: none;
-	}
-	.sponsorLogoDesktop{
-		display: flex;
-		padding: 20px 10px;	
-	}
-	
+	}	
 	.sponsorContent{
 		font-size: 14px;
 	}
