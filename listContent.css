@@ -1,14 +1,17 @@
+/*hover focus active*/
+	.bottomContent button{
+		border: none;
+		background: none;
+		border-radius: 20px;
+		padding: 0 10px;
+	}
+	.bottomContent button:hover,
+	.bottomContent button:focus{
+		outline: none;
+		background: var(--bg_lightgrey)
+	}
 
-.bottomContent button{
-	border: none;
-	background: none;
-	border-radius: 20px;
-}
-.bottomContent button:hover,
-.bottomContent button:focus{
-	outline: none;
-	box-shadow: 0 0 0 2px var(--grey);
-}
+/*List Grid*/
 .listGrid svg{
 	margin: 7px 5px 0 0;
 	}
@@ -17,6 +20,7 @@
 	justify-content: space-between;
 	padding: 10px 0;
 }
+/*filter checkbox*/
 .checkbox{
 	text-transform: uppercase;
 	display: flex;
