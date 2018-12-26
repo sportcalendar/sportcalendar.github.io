@@ -1,4 +1,14 @@
 
+.bottomContent button{
+	border: none;
+	background: none;
+	border-radius: 20px;
+}
+.bottomContent button:hover,
+.bottomContent button:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px var(--grey);
+}
 .listGrid svg{
 	margin: 7px 5px 0 0;
 	}
