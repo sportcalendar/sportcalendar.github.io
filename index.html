@@ -229,30 +229,64 @@
                     </section>                
                 </div>                      
             </div> 
-            <div class="checkboxMenu">
-                <div class="checkboxItem checkbox">
-                    <input type="checkbox" id="amateurEvent" checked>
-                    <label for="amateurEvent">Аматорські </label>
-                </div>
+            <form class="filterCheckbox" action="#" method="GET">
+                <fieldset class="filterTypeSport">
+                    <legend class="visually-hidden">Підкатегорія:</legend>
+                    <ul class="checkboxMenu">
+                        <li class="checkboxItem checkbox">
+                            <input type="checkbox" name="WhiteWater" id="filterWhiteWater"checked>
+                            <label for="filterWhiteWater">WhiteWater</label>                            
+                        </li>
+                        <li class="checkboxItem checkbox">
+                            <input type="checkbox" name="Orienteering" id="filterOrienteering"checked>
+                            <label for="filterOrienteering">Орієнтування</label>                            
+                        </li>
+                        <li class="checkboxItem checkbox">
+                            <input type="checkbox" name="Marathon" id="filterMarathon"checked>
+                            <label for="filterMarathon">Перегони</label>                            
+                        </li>
+                        <li class="checkboxItem checkbox">
+                            <input type="checkbox" name="KayakSup" id="filterKayakSup"checked>
+                            <label for="filterKayakSup">Каяк+SUP</label>
+                            
+                        </li>
+                        <li class="checkboxItem checkbox">
+                            <input type="checkbox" name="CanoePolo" id="filterCanoePolo"checked>
+                            <label for="filterCanoePolo">CanoePolo</label>                            
+                        </li>
+                    </ul>
+                </fieldset>
 
-                <div class="checkboxItem checkbox">
-                    <input type="checkbox" id="profEvent" checked>
-                    <label for="profEvent">Професійні </label>
-                </div>
+                <fieldset class="filterLevelSport">
+                    <legend class="visually-hidden">Рівень:</legend>
+                    <ul class="checkboxMenu">
+                        <li class="checkboxItem checkbox">
+                            <input type="checkbox" id="amateurEvent" checked>
+                            <label for="amateurEvent">Аматорські </label>
+                        </li>
+                        <li class="checkboxItem checkbox">
+                            <input type="checkbox" id="profEvent" checked>
+                            <label for="profEvent">Професійні </label>
+                        </li>                                                
+                    </ul>
+                                     
+                </fieldset>
+            </form>
+            <div class="filterGrid">
+                <div ></div>
                 <!-- ListGrid -->
                 <div class="listGrid">                
-                        <svg class="icon list" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.626 511.627" style="enable-background:new 0 0 511.626 511.627;"xml:space="preserve"><g><g><path d="M118.771,200.999H27.406c-7.611,0-14.084,2.664-19.414,7.994C2.663,214.32,0,220.791,0,228.407v54.823c0,7.61,2.663,14.078,7.992,19.406c5.33,5.329,11.803,7.994,19.414,7.994h91.365c7.611,0,14.084-2.665,19.414-7.994c5.33-5.328,7.992-11.796,7.992-19.406v-54.823c0-7.616-2.662-14.087-7.992-19.414S126.382,200.999,118.771,200.999z"/><path d="M118.771,54.814H27.406c-7.611,0-14.084,2.663-19.414,7.993C2.663,68.137,0,74.61,0,82.221v54.821c0,7.616,2.663,14.091,7.992,19.417c5.33,5.327,11.803,7.994,19.414,7.994h91.365c7.611,0,14.084-2.667,19.414-7.994s7.992-11.798,7.992-19.414V82.225c0-7.611-2.662-14.084-7.992-19.417C132.855,57.48,126.382,54.814,118.771,54.814z"/><path d="M118.771,347.177H27.406c-7.611,0-14.084,2.662-19.414,7.994C2.663,360.502,0,366.974,0,374.585v54.826c0,7.61,2.663,14.086,7.992,19.41c5.33,5.332,11.803,7.991,19.414,7.991h91.365c7.611,0,14.084-2.663,19.414-7.991c5.33-5.324,7.992-11.8,7.992-19.41v-54.826c0-7.611-2.662-14.083-7.992-19.411S126.382,347.177,118.771,347.177z"/><path d="M484.215,200.999H210.131c-7.614,0-14.084,2.664-19.414,7.994s-7.992,11.798-7.992,19.414v54.823c0,7.61,2.662,14.078,7.992,19.406c5.327,5.329,11.8,7.994,19.414,7.994h274.091c7.61,0,14.085-2.665,19.41-7.994c5.332-5.328,7.994-11.796,7.994-19.406v-54.823c0-7.616-2.662-14.087-7.997-19.414C498.3,203.663,491.833,200.999,484.215,200.999z"/><path d="M484.215,347.177H210.131c-7.614,0-14.084,2.662-19.414,7.994c-5.33,5.331-7.992,11.8-7.992,19.41v54.823c0,7.611,2.662,14.089,7.992,19.417c5.327,5.328,11.8,7.987,19.414,7.987h274.091c7.61,0,14.085-2.662,19.41-7.987c5.332-5.331,7.994-11.806,7.994-19.417v-54.823c0-7.61-2.662-14.085-7.997-19.41C498.3,349.846,491.833,347.177,484.215,347.177z"/><path d="M503.629,62.811c-5.329-5.327-11.797-7.993-19.414-7.993H210.131c-7.614,0-14.084,2.663-19.414,7.993s-7.992,11.803-7.992,19.414v54.821c0,7.616,2.662,14.083,7.992,19.414c5.327,5.327,11.8,7.994,19.414,7.994h274.091c7.61,0,14.078-2.667,19.41-7.994s7.994-11.798,7.994-19.414V82.225C511.626,74.613,508.964,68.141,503.629,62.811z"/></g></g></svg>
-                    </div> 
-            </div>
-            <!-- FILTERS end-->   
+                    <svg class="icon list" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 511.626 511.627" style="enable-background:new 0 0 511.626 511.627;"xml:space="preserve"><g><g><path d="M118.771,200.999H27.406c-7.611,0-14.084,2.664-19.414,7.994C2.663,214.32,0,220.791,0,228.407v54.823c0,7.61,2.663,14.078,7.992,19.406c5.33,5.329,11.803,7.994,19.414,7.994h91.365c7.611,0,14.084-2.665,19.414-7.994c5.33-5.328,7.992-11.796,7.992-19.406v-54.823c0-7.616-2.662-14.087-7.992-19.414S126.382,200.999,118.771,200.999z"/><path d="M118.771,54.814H27.406c-7.611,0-14.084,2.663-19.414,7.993C2.663,68.137,0,74.61,0,82.221v54.821c0,7.616,2.663,14.091,7.992,19.417c5.33,5.327,11.803,7.994,19.414,7.994h91.365c7.611,0,14.084-2.667,19.414-7.994s7.992-11.798,7.992-19.414V82.225c0-7.611-2.662-14.084-7.992-19.417C132.855,57.48,126.382,54.814,118.771,54.814z"/><path d="M118.771,347.177H27.406c-7.611,0-14.084,2.662-19.414,7.994C2.663,360.502,0,366.974,0,374.585v54.826c0,7.61,2.663,14.086,7.992,19.41c5.33,5.332,11.803,7.991,19.414,7.991h91.365c7.611,0,14.084-2.663,19.414-7.991c5.33-5.324,7.992-11.8,7.992-19.41v-54.826c0-7.611-2.662-14.083-7.992-19.411S126.382,347.177,118.771,347.177z"/><path d="M484.215,200.999H210.131c-7.614,0-14.084,2.664-19.414,7.994s-7.992,11.798-7.992,19.414v54.823c0,7.61,2.662,14.078,7.992,19.406c5.327,5.329,11.8,7.994,19.414,7.994h274.091c7.61,0,14.085-2.665,19.41-7.994c5.332-5.328,7.994-11.796,7.994-19.406v-54.823c0-7.616-2.662-14.087-7.997-19.414C498.3,203.663,491.833,200.999,484.215,200.999z"/><path d="M484.215,347.177H210.131c-7.614,0-14.084,2.662-19.414,7.994c-5.33,5.331-7.992,11.8-7.992,19.41v54.823c0,7.611,2.662,14.089,7.992,19.417c5.327,5.328,11.8,7.987,19.414,7.987h274.091c7.61,0,14.085-2.662,19.41-7.987c5.332-5.331,7.994-11.806,7.994-19.417v-54.823c0-7.61-2.662-14.085-7.997-19.41C498.3,349.846,491.833,347.177,484.215,347.177z"/><path d="M503.629,62.811c-5.329-5.327-11.797-7.993-19.414-7.993H210.131c-7.614,0-14.084,2.663-19.414,7.993s-7.992,11.803-7.992,19.414v54.821c0,7.616,2.662,14.083,7.992,19.414c5.327,5.327,11.8,7.994,19.414,7.994h274.091c7.61,0,14.078-2.667,19.41-7.994s7.994-11.798,7.994-19.414V82.225C511.626,74.613,508.964,68.141,503.629,62.811z"/></g></g></svg>
+                </div>
+            </div>         
 
-               
+            <!-- FILTERS end-->   
 
             <!--LIST CONTENT-->
             <div class="listContent">                            
                                 
                 <!--Bayda Ice Challenge-->
-                <div class="blockContent BaydaIceChallenge">                    
+                <div tabindex="0" class="blockContent BaydaIceChallenge">                    
                     <section class="infoContent"> 
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -288,7 +322,7 @@
                 </div>
                 
                 <!--КАНУПОЛО-->
-                <div class="blockContent CanoePolo">                    
+                <div tabindex="0" class="blockContent CanoePolo">                    
                     <section class="infoContent">
                         <div class="topEventContent">                             
                             <div class="dateContent "> 
@@ -321,7 +355,7 @@
                 </div>
 
                 <!--Toy Shcho Greblu Rve-->
-                <div class="blockContent ToyShchoGrebluRve">                    
+                <div tabindex="0" class="blockContent ToyShchoGrebluRve">                    
                     <section class="infoContent">
                         <div class="topEventContent">   
                             <div class="dateContent "> 
@@ -354,7 +388,7 @@
                 </div>
 
                 <!--Чемпіонат України зі слаломного веслування серед молод-->
-                <div class="blockContent Slalom">                    
+                <div tabindex="0" class="blockContent Slalom">                    
                         <section class="infoContent">
                             <div class="topEventContent">   
                                 <div class="dateContent "> 
@@ -387,7 +421,7 @@
                     </div>
 
                 <!--Турнір з Техніки Водного Туризму "Прут 2019"-->
-                <div class="blockContent Prut">                    
+                <div tabindex="0" class="blockContent Prut">                    
                     <section class="infoContent">
                         <div class="topEventContent"> 
                             <div class="dateContent "> 
@@ -422,7 +456,7 @@
                 </div>
 
                 <!--Kiev Open SUP Race-->
-                <div class="blockContent Prut">                    
+                <div tabindex="0" class="blockContent Prut">                    
                     <section class="infoContent">
                         <div class="topEventContent"> 
                             <div class="dateContent "> 
@@ -457,7 +491,7 @@
                 </div>                
                     
                 <!--Toy Shcho Greblu Rve-->
-                <div class="blockContent ToyShchoGrebluRve">                    
+                <div tabindex="0" class="blockContent ToyShchoGrebluRve">                    
                     <section class="infoContent">
                         <div class="topEventContent"> 
                             <div class="dateContent "> 
@@ -492,7 +526,7 @@
                 </div>
 
                 <!--SAMARACE 50 km-->
-                <div class="blockContent SAMARACE50km">                    
+                <div tabindex="0" class="blockContent SAMARACE50km">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -527,7 +561,7 @@
                 </div>
 
                 <!--Відкиття сезону з орієнтування на воді -->
-                <div class="blockContent OrientiringZaporozhiye">                    
+                <div tabindex="0" class="blockContent OrientiringZaporozhiye">                    
                     <section class="infoContent">
                         <div class="topEventContent">                            
                             <div class="dateContent "> 
@@ -562,7 +596,7 @@
                 </div>
 
                 <!--Шлях Бокораша-->
-                <div class="blockContent OrientiringZaporozhiye">                    
+                <div tabindex="0" class="blockContent OrientiringZaporozhiye">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -597,7 +631,7 @@
                 </div>
 
                 <!--Тернополо. Кануполо у Тернополі-->
-                <div class="blockContent TernoPolo">                    
+                <div tabindex="0" class="blockContent TernoPolo">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -632,7 +666,7 @@
                 </div>
 
                 <!--НЕБУХАЙ-->
-                <div class="blockContent TernoPolo">                    
+                <div tabindex="0" class="blockContent TernoPolo">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -667,7 +701,7 @@
                 </div>
 
                 <!--Bayda Rally-->
-                <div class="blockContent BaydaRally">                    
+                <div tabindex="0" class="blockContent BaydaRally">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -702,7 +736,7 @@
                 </div>        
 
                 <!--Троє в каное-->
-                <div class="blockContent TroeVcanoe">                    
+                <div tabindex="0" class="blockContent TroeVcanoe">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -737,7 +771,7 @@
                 </div>
 
                 <!--АРХІПЕЛАГ-О 2019 Фестиваль водного орієнтування-->
-                <div class="blockContent Arhipelag">                    
+                <div tabindex="0" class="blockContent Arhipelag">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -772,7 +806,7 @@
                 </div>
 
                 <!--САП-Каяк крос на Дунаї-->
-                <div class="blockContent SupKayakCrossDunay">                    
+                <div tabindex="0" class="blockContent SupKayakCrossDunay">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -807,7 +841,7 @@
                 </div>
 
                 <!--Водний рогейн 2019-->
-                <div class="blockContent VodnyRogeyn">                    
+                <div tabindex="0" class="blockContent VodnyRogeyn">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -841,7 +875,7 @@
                 </div>
 
                 <!--Water Fest-->
-                <div class="blockContent WaterFest">                    
+                <div tabindex="0" class="blockContent WaterFest">                    
                     <section class="infoContent">
                         <div class="topEventContent">
                             <div class="dateContent "> 
@@ -875,7 +909,7 @@
                 </div>
 
                 <!--Shark attack -->
-                <div class="blockContent SharkAttack ">    
+                <div tabindex="0" class="blockContent SharkAttack ">    
                     <section class="infoContent">
                         <div class="topEventContent">                
                             <div class="dateContent "> 
@@ -909,7 +943,7 @@
                 </div>
 
                 <!--Kherson Dnipro Race-->
-                <div class="blockContent KhersonDniproRace ">                    
+                <div tabindex="0" class="blockContent KhersonDniproRace ">                    
                     <section class="infoContent">
                         <div class="topEventContent">                
                             <div class="dateContent "> 
@@ -943,7 +977,7 @@
                 </div>
 
                 <!--Dnister Challenge Race-->
-                <div class="blockContent DnisterChallengeRace ">                    
+                <div tabindex="0" class="blockContent DnisterChallengeRace ">                    
                     <section class="infoContent">
                         <div class="topEventContent">            
                             <div class="dateContent "> 
@@ -977,7 +1011,7 @@
                 </div>
 
                 <!--САП-Каяк уикенд-->
-                <div class="blockContent SupKayakWeekend">                    
+                <div tabindex="0" class="blockContent SupKayakWeekend">                    
                     <section class="infoContent">
                         <div class="topEventContent">          
                             <div class="dateContent "> 
@@ -1011,7 +1045,7 @@
                 </div>
 
                 <!--КАНУПОЛО-->
-                <div class="blockContent CanoePolo">                    
+                <div tabindex="0" class="blockContent CanoePolo">                    
                     <section class="infoContent">
                         <div class="topEventContent">          
                             <div class="dateContent "> 
@@ -1045,7 +1079,7 @@
                 </div>
 
                 <!--SUP-->
-                <div class="blockContent SUP">                    
+                <div tabindex="0" class="blockContent SUP">                    
                     <section class="infoContent">
                         <div class="topEventContent">          
                             <div class="dateContent "> 
@@ -1079,7 +1113,7 @@
                 </div>
 
                 <!--Water4all 2019-->
-                <div class="blockContent Water4all">                    
+                <div tabindex="0" class="blockContent Water4all">                    
                     <section class="infoContent">
                         <div class="topEventContent">        
                             <div class="dateContent "> 
@@ -1113,7 +1147,7 @@
                 </div>
 
                 <!--Каховська 100-ка 2019-->
-                <div class="blockContent KahovskaSotka">                    
+                <div tabindex="0" class="blockContent KahovskaSotka">                    
                     <section class="infoContent">
                         <div class="topEventContent">        
                             <div class="dateContent "> 
