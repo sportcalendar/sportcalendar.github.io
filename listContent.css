@@ -10,45 +10,47 @@
 		outline: none;
 		background: var(--bg_lightgrey)
 	}
-
-/*List Grid*/
-.listGrid svg{
-	margin: 7px 5px 0 0;
-	}
+/*checkbox view*/
 	.checkboxMenu{
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0;
+	}
+	.checkbox{
+		display: flex;
+		padding: 0;
+		align-items: center;
+		position:relative;
+		padding-left:25px;
+		font-size: 14px;
+	}
+	.checkbox input[type=checkbox] {
+		display:none;
+	}
+	.checkbox label:after {
+		content:'';
+		display:block;
+		height:12px;
+		width:12px;
+		outline:1px solid #939598;
+		position:absolute;
+		top:20%;
+		right: 85%;
+	}
+	.checkbox input[type=checkbox]:checked + label:after {
+		outline:1px solid #939598;
+		border:2px solid #fff;
+		width:10px;
+		height:10px;
+		background-color: var(--grey);
+	}
+/*fieldset checkbox */
+.filterCheckbox fieldset{
+	border: none;
 }
-/*filter checkbox*/
-.checkbox{
-	text-transform: uppercase;
-	display: flex;
-	padding: 0;
-	align-items: center;
-	position:relative;
-	padding-left:25px;
-	font-size: 13px;
-}
-.checkbox input[type=checkbox] {
-	display:none;
-}
-.checkbox label:after {
-	content:'';
-	display:block;
-	height:12px;
-	width:12px;
-	outline:1px solid #939598;
-	position:absolute;
-	top:20%;
-	right: 85%;
-}
-.checkbox input[type=checkbox]:checked + label:after {
-	outline:1px solid #939598;
-	border:2px solid #fff;
-	width:10px;
-	height:10px;
-	background-color: var(--grey);
+.filterLevelSport .checkboxMenu{
+	justify-content: space-around;
+	font-weight: bold;
 }
 /*top event content*/	
 		.topEventContent{
@@ -135,25 +137,7 @@ body{
 .filterBlock svg{
 	height: 13px;
 }
-	/*listGrid*/
-	.listGrid{
-		display: flex;
-		justify-content: flex-end;
-	}
-	.listGrid .icon{
-		width: 18px;
-		height: 18px;
-	}
-	.listGrid .grid{
-		fill: var(--grey);
-		margin: 0 10px;
-	}
-	.listGrid .grid:hover{
-		fill: var(--mint);
-	}
-	.listGrid .list:hover{
-		fill: var(--red);
-	}	
+	
 /* filters modal*/
 		.modal .filterItem{
 			padding: 5px 0;
@@ -265,7 +249,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
-	margin: 0 0 30px 0;
+	margin: 0 0 10px 0;
 	padding: 0;
 	}
 	.filterBlock {
@@ -285,12 +269,20 @@ body{
 	font-weight: bold;
 	}
 	.checkboxMenu{
-		padding: 0 5px;
-		margin: 0 0 20px 0;
-		}
-		.checkboxItem{
-			font-size: 14px;
-		}
+		display: block;
+		display: none;
+		width: 50%;
+		margin: 0 auto;
+	}
+			.checkbox label:after {
+				top:20%;
+				left:0;
+			}
+.filterGrid{
+	padding: 5px 10px ;
+	display: flex;
+	justify-content: space-between;
+}
 /*LIST CONTENT*/
 .blockContent{
 	display: flex;
@@ -409,10 +401,22 @@ h2{
 			margin: 0 5px;
 		}
 
+/*checkbox*/
+.checkboxMenu{
+	display: block;
+	display: none;
+	width: 50%;
+	margin: 0 auto;
+}
 		.checkbox label:after {
-			top:28%;
-			right: 85%;
+			top:20%;
+			left:0;
 		}
+.filterGrid{
+	padding: 5px 10px ;
+	display: flex;
+	justify-content: space-between;
+}
 /*LIST CONTENT*/
 .listContent{
 	background-color: var(--light_grey);
