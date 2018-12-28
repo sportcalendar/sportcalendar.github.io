@@ -58,18 +58,12 @@
 			justify-content: space-between;
 			letter-spacing: .050em;
 		}	
-		/*location EVENT*/
-	.locationContent{
-		/* background-color: var(--border_grey);	
-		border-radius: 25px 0 0 25px;			 */
-		}	
+/*location EVENT*/		
 		.locationContent strong{
 		color: var(--blue);		
 		padding: 10px;	
-		}
-		/*location EVENT*/
-		
-	/*name EVENT*/
+		}		
+/*name EVENT*/
 		.blockContent .nameContent a,
 		.blockContent .nameContent a:visited,
 		.blockContent .nameContent a:active{
@@ -77,9 +71,8 @@
 			border-bottom: none;
 			color: var(--blue);
 		}
-		.blockContent .descriptionContent{
-			letter-spacing: .050em;
-			font-size: 13px;
+		.nameContent h2{
+			font-size: 18px;
 		}
 /*bottom event content*/
 		.bottomContent svg{
@@ -178,41 +171,38 @@ body{
 		display: none;
 	}		
 /*EVENT SECTION*/	
-.blockContent{
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;	
-	margin-bottom: 25px;
-	border-bottom: 1px solid var(--border_grey);
-	background-color: #fff;	
-}	
-.blockContent:hover{
-	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.123);
-	transition: 200ms linear all;
-}
-.infoContent{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 450px;		
-	padding: 10px 0 0 15px;
-}
+	.blockContent{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;	
+		margin-bottom: 25px;
+		border-bottom: 1px solid var(--border_grey);
+		background-color: #fff;	
+	}	
+	.blockContent:hover{
+		box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.123);
+		transition: 200ms linear all;
+	}
+	.infoContent{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 450px;		
+		padding: 10px 0 0 15px;
+	}
 /*top EVENT*/
 .dateContent{
 	display: flex;
 	font-weight: bold;
-	background-color: var(--border_grey);
-	border-radius: 20px;
-	padding: 0 8px;
 }
 .dateContent strong{
 	margin-right: 5px;
 }
-
-/*name EVENT*/
-.nameContent h2{
-	font-weight: bold;
-}	
+/*name EVENT*/	
+.blockContent .descriptionContent{
+	letter-spacing: .050em;
+	font-size: 13px;
+}
 /*bottom EVENT*/
 .blockContent hr{
 	border:none!important;		
@@ -225,9 +215,6 @@ body{
 	.blockContent .bottomContent svg{
 		fill: var(--grey);
 	}
-	
-/*image EVENT*/
-
 /*img EVENT*/
 	.blockContent .imgContent{
 		background: url("img/logo/SC_logo_vert.png") no-repeat center ;
@@ -371,11 +358,7 @@ body{
 	background: var(--bg_lightgrey);
 }
 .container{
-	font-size: 16px;}
-
-h2{
-	font-size: 18px;
-	font-weight: normal;
+	font-size: 16px;
 }
 /*FILTERS*/
 		.filterMenu{
@@ -435,36 +418,39 @@ h2{
 	.infoContent{
 		padding: 5px 10px;
 	}
-	.topEventContent strong,
-	.topEventContent .dateContent{
-		font-size: 14px;
-		font-weight: normal;
-	}
-	.dateContent{
-		display: flex;
-	}
-	.dateContent strong{
-		margin-right: 5px;
-	}
+/*top content*/
+		.topEventContent strong,
+		.topEventContent .dateContent{
+			font-weight: normal;
+		}
+		.dateContent{
+			display: flex;
+		}
+		.dateContent strong{
+			margin-right: 5px;
+		}
 /*mane content*/
-.nameContent{
-	padding: 5px 0;
-}
-.nameContent h2{
-	font-weight: bold;
-}
+		.nameContent h2{
+			font-size: 20px;
+			font-weight: normal;
+		}
+		.nameContent{
+			padding: 5px 0;
+		}
+		.nameContent h2{
+			font-weight: bold;
+		}
 /*bottom content*/
-hr{
-display: none;
-}
-.blockContent .bottomContent{
-display: flex;
-justify-content:space-around;
-vertical-align: center;
-text-align: center;		
-}
-.blockContent .bottomContent svg{
-}	
+		hr{
+		display: none;
+		}
+		.blockContent .bottomContent{
+		display: flex;
+		justify-content:space-around;
+		vertical-align: center;
+		text-align: center;	
+		}	
+	 
 /*image EVENT*/
 .imgContent img{
 	width: 100%;
