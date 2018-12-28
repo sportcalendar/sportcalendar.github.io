@@ -174,6 +174,9 @@ body{
 				display: flex;
 				justify-content: space-between;
 			}
+	.filterGrid{
+		display: none;
+	}		
 /*EVENT SECTION*/	
 .blockContent{
 	display: flex;
@@ -428,43 +431,24 @@ h2{
 		background: #fff;
 		border-bottom: 1px solid var(--grey);
 		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.123);
-		position: relative;
 	}
-	.dateContent,
-	.locationContent{
-	padding: 5px 10px;
+	.infoContent{
+		padding: 5px 10px;
 	}
-	/*location EVENT*/		
-		.locationContent{	
-		/* background-color: var(--blue);	
-		border-radius: 20px 0 0 20px;			 */
-		}	
-	.locationContent strong{
-		position: absolute;
-		bottom: 0;
-		left: 0;
+	.topEventContent strong,
+	.topEventContent .dateContent{
+		font-size: 14px;
+		font-weight: normal;
 	}
-	/*date EVENT*/	
 	.dateContent{
-	background-color: var(--blue);
-	position: absolute;
-	top: 0;
-	width: 75px;
-	text-align: center;
+		display: flex;
 	}
 	.dateContent strong{
-		color: #fff;
-		font-size: 16px;
-		letter-spacing: 1.7px;
-	}
-	.dateContent p{
-		color: #fff;
-		font-size: 14px;
-		text-transform: uppercase;
+		margin-right: 5px;
 	}
 /*mane content*/
-.blockContent .nameContent {
-	margin: 0 10px;
+.nameContent{
+	padding: 5px 0;
 }
 .nameContent h2{
 	font-weight: bold;
@@ -475,21 +459,13 @@ display: none;
 }
 .blockContent .bottomContent{
 display: flex;
-justify-content:flex-end;
+justify-content:space-around;
 vertical-align: center;
 text-align: center;		
 }
 .blockContent .bottomContent svg{
-margin-left: 30px;
 }	
-.blockContent .bottomContent {
-margin: 10px;
-}
 /*image EVENT*/
-.imgContent{
-	min-width: 320px;
-	min-height: 70px;
-}
 .imgContent img{
 	width: 100%;
 }	
