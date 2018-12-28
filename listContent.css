@@ -1,469 +1,340 @@
-/*hover focus active*/
-	.bottomContent button{
-		border: none;
-		background: none;
-		border-radius: 20px;
-		padding: 0 10px;
-	}
-	.bottomContent button:hover,
-	.bottomContent button:focus{
-		outline: none;
-		background: var(--bg_lightgrey)
-	}
-/*checkbox view*/
-	.checkboxMenu{
-		display: flex;
-		justify-content: space-between;
-		padding: 10px 0;
-	}
-	.checkbox{
-		display: flex;
-		padding: 0;
-		align-items: center;
-		position:relative;
-		padding-left:25px;
-		font-size: 14px;
-	}
-	.checkbox input[type=checkbox] {
-		display:none;
-	}
-	.checkbox label:after {
-		content:'';
-		display:block;
-		height:12px;
-		width:12px;
-		outline:1px solid #939598;
-		position:absolute;
-		top:20%;
-		right: 85%;
-	}
-	.checkbox input[type=checkbox]:checked + label:after {
-		outline:1px solid #939598;
-		border:2px solid #fff;
-		width:10px;
-		height:10px;
-		background-color: var(--grey);
-	}
-/*fieldset checkbox */
-.filterCheckbox fieldset{
-	border: none;
+:root{
+	--bg_lightgrey:#F8F8F7;
+	--border_grey:#e2e2e2;
+	--grey:#cfcfcf;
+	--red: #FB4148;
+	--blue: #1C2957;
+	--mint: #F3F7FA;	
+	--yellow: #F7C51E;	
 }
-.filterLevelSport .checkboxMenu{
-	justify-content: space-around;
-	font-weight: bold;
-}
-/*top event content*/	
-		.topEventContent{
-			display: flex;
-			justify-content: space-between;
-			letter-spacing: .050em;
-		}	
-/*location EVENT*/		
-		.locationContent strong{
-		color: var(--blue);		
-		padding: 10px;	
-		}		
-/*name EVENT*/
-		.blockContent .nameContent a,
-		.blockContent .nameContent a:visited,
-		.blockContent .nameContent a:active{
-			font-weight: bold;
-			border-bottom: none;
-			color: var(--blue);
-		}
-		.nameContent h2{
-			font-size: 18px;
-		}
-/*bottom event content*/
-		.bottomContent svg{
-			fill:var(--grey);
-			margin-right: 5px;
-		}	
-		.blockContent .bottomContent .iconItem{
-			display: flex;
-			align-items: center;
-			color: var(--grey);
-		}	
-		.blockContent .bottomContent span{
-			color: var(--grey);		
-		}	
-
-/*RIGHT SIDE SECTION*/
-.itemSection .contentRightside{
-	width: 215px;
-}
-.itemSection .iconRightside{
-	width: 35px;
-}
-/*modal*/
-.dateFilter .modal,
-.locFilter .modal,
-.categoryFilter .modal{
-	display: none;
-}
-
-/*---DESKTOP---*/
-@media (min-width: 1020px) and (max-width: 1450px){
 body{
 	background: var(--bg_lightgrey);
 }
-/*FILTERS*/
-.filterMenu{
-	display: flex;
-	justify-content: space-between;
-	white-space: nowrap; 
-	align-items: center;
-	padding: 0 0 20px 0;
+*{
+	box-sizing: border-box;
+	font-family: "Helvetica", sans-serif, Arial;	
+	color: var(--blue);
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	line-height: 25px;
 }	
-.filterBlock{
-	background-color: var(--border_grey);
-	width: 28%;
-	border-radius: 20px;
-	padding: 3px 15px;
-	text-transform: uppercase;
+* .icon{
+	width: 16px;
+	height: 16px;
+	fill: var(--blue);
 }
-.filterBlock{
-	display: flex;
-	justify-content: space-between;
+.visually-hidden{
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+/*SPONSOR MOB*/
+.sponsorLogoMob,
+.sponsorLogoDesktop{
+	display: none;
 	align-items: center;
+	padding: 20px 10px ;	
 }
-.filterBlock svg{
-	height: 13px;
+.sponsorLogoMob .sponsorIcon{
+	fill:#E31E24;
+	height: 45px;
+	margin-right: 30px;
 }
-	
-/* filters modal*/
-		.modal .filterItem{
-			padding: 5px 0;
-		}
-		.filterMenu .modalFilter ul{
-			border: none;
-			background: none;
-		}
-		.filterMenu .modalFilter ul:focus,
-		.filterMenu .modalFilter ul:hover,
-		.filterMenu .modalFilter ul:active{
-			outline: none;
-		}	
-		/*categoryFilter*/
-			.categoryFilter .filterContent{
-				display: flex;		
-			}
-			.categoryFilter .filterContent li{
-				margin-right: 20px;
-			}
-		/*locationFilter*/
-			.locFilter .filterContent{
-				display: flex;		
-			}
-			.locFilter .filterContent li{
-				margin-right: 15px;
-			}
-		/*dateFilter*/
-			.dateFilter .filterItem{
-				font-size: 16px;
-			}
-			.dateFilter .seasonItem{
-				padding: 18px;
-				display: flex;
-				justify-content: space-between;
-			}
-	.filterGrid{
-		display: none;
-	}		
-/*EVENT SECTION*/	
-	.blockContent{
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;	
-		margin-bottom: 25px;
-		border-bottom: 1px solid var(--border_grey);
-		background-color: #fff;	
-	}	
-	.blockContent:hover{
-		box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.123);
-		transition: 200ms linear all;
-	}
-	.infoContent{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 450px;		
-		padding: 10px 0 0 15px;
-	}
-/*top EVENT*/
-.dateContent{
-	display: flex;
+.sponsorLogoMob .sponsorContent{
+	font-size: 14px;
+}
+.sponsorLogoMob .sponsorTitle{
+	color: #E31E24;
 	font-weight: bold;
 }
-.dateContent strong{
-	margin-right: 5px;
+/*SPONSOR DESCKTOP*/
+.sponsorLogoDesktop .sponsorIcon{
+	fill:#E31E24;
+	height: 50px;
+	margin-right: 20px;
 }
-/*name EVENT*/	
-.blockContent .descriptionContent{
-	letter-spacing: .050em;
-	font-size: 13px;
+ .sponsorIcon,
+ .sponsorContent p{
+	color: #E31E24;
+	font-weight: bold;
 }
-/*bottom EVENT*/
-.blockContent hr{
-	border:none!important;		
-}
-.blockContent .bottomContent{
-	display: flex;
-	justify-content: space-around;
-	padding-bottom: 5px;
-	}			
-	.blockContent .bottomContent svg{
-		fill: var(--grey);
+
+
+/*MODAL*/
+		.modal{
+			position: fixed;
+			background: #fff;
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.082);
+		}
+		.modalClose{
+			background: #fff;
+			border: none;
+		}
+		.modalFilter{
+			top: 135px;
+			left: 50%;
+
+			width: 610px;
+			height: 300px;
+			margin-left: -480px;
+			padding: 10px 10px;
+		}
+		.modal .filterHeader{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+
+	
+/*- DESKTOP -*/
+@media (min-width: 1020px) and (max-width: 1450px){	
+	.container{
+		font-size: 14px;		
 	}
-/*img EVENT*/
-	.blockContent .imgContent{
-		background: url("img/logo/SC_logo_vert.png") no-repeat center ;
-		background-size: 130px;
-		width: 250px;
-		height: 140px;
+	.sponsorLogoMob{
+		display: none;
 	}
-	.imgContent img{
+	/*HEADER*/
+	header{
+		display: flex;
+		justify-content: space-between;		
 		width: 100%;
+		font-size: 14px;	
+		background-color: var(--blue);
+		padding: 15px 40px;
+	}	
+	.headerLogo svg{
+		height: 45px;
+		margin: 0 auto;
+		width: 200px;
+	}	
+	.headerLogo{
+		width: 200px;
 		height: 100%;
 	}
+	.headerMenu{
+		display: flex;
+		justify-content: space-between;	
+		width: 400px;	
+		align-items: bottom;
+		height: 100%;
+		margin-top: 20px;
+	}
+	.headerMenu a,
+	.headerMenu a:visited,
+	.headerMenu a:active{
+		border-bottom: none;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: .7px;	
+}	
+	.locationContent svg{
+		fill: var(--blue);
+	}
+	h2{
+		font-size: 16px;
+	}
+
+/*MAIN*/
+	main{
+		width: 950px;
+		margin: 0 auto;
+		padding: 40px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	.contentSection{
+		width: 600px;		
+	}	
+/*RIGHT SECTION*/
+.otherSide{
+	width: 300px;
+	background-color: #fff;
+}
+.otherSide	.itemSection {
+	padding: 10px 0 5px 0;
+}
+		.itemSection .item{
+			display: flex;
+			align-items: center;
+			padding: 0 20px;
+		}			
+	/*quickNavigation*/
+	.quickNavigation{
+		margin-top: 10px;
+	}
+	.quickNavigation h2{
+		margin: 0 20px 10px;
+		text-align: center;
+		background-color: var(--border_grey);
+		border-radius:  20px;
+	}
+	.quickNavigation .item{
+		margin-bottom: 15px;
+	}
+	.quickNavigation .descriptionContent{
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: .050em;
+	}		
+	.quickNavigation svg{
+		fill:var(--grey);
+		width: 18px;
+		height: 18px;
+	}			
 }
 
-/*---TABLET---*/
+/*- TABLET -*/
 @media (min-width: 640px) and (max-width: 1020px){
+	body{
+		background: var(--bg_lightgrey);
+	}
+	.sponsorLogoMob{
+		display: none;
+	}	
+	.sponsorContent{
+		font-size: 14px;
+	}
+	.container{
+		font-size: 17px;
+	}
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	/*HEADER*/
+	header{
+		display: flex;
+		justify-content: space-between;		
+		width: 100%;
+		font-size: 14px;	
+		background-color: var(--blue);
+		padding: 15px 5px;
+	}	
+	.headerLogo svg{
+		height: 45px;
+		margin: 0 auto;
+		width: 200px;
+	}	
+	.headerLogo{
+		width: 200px;
+		height: 100%;
+	}
+	.headerMenu{
+		display: flex;
+		justify-content: space-between;	
+		width: 400px;	
+		align-items: bottom;
+		height: 100%;
+		margin-top: 20px;
+	}
+	.headerMenu a,
+	.headerMenu a:visited,
+	.headerMenu a:active{
+		border-bottom: none;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: .7px;	
+}
+/*MAIN*/
+	main{
+		margin: 30px 10px;
+		display: flex;
+	}
+	.contentSection{
+		width: 62%;
+	}			
+	
+	/*RIGHT SECTION*/
+.otherSide{
+	width: 38%;
+	font-size: 16px;
+	min-width: 280px;
+	background-color: #fff;
 
-/*EVENT SECTION*/	
-.contentSection{
-	margin-right: 40px;
-}		
-.filterMenu{
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	margin: 0 0 10px 0;
-	padding: 0;
-	}
-	.filterBlock {
-		width: 30%;
-		padding: 2px; 
-		background-color:var(--border_grey);
-		border-radius: 20px;
-			white-space: nowrap; 
+}
+.otherSide	.itemSection {
+	padding: 10px 0 5px 0;
+}
+		.itemSection .item{
+			display: flex;
 			align-items: center;
-			overflow: hidden;		
-			text-overflow: ellipsis;
+			padding: 0 20px;
+		}	
+		.itemSection p{
+			width: 95%;
+			overflow: hidden; 
+			white-space: nowrap; 
+			text-overflow: ellipsis; 
+		}		
+	/*quickNavigation*/
+	.quickNavigation{
+		margin-top: 10px;
 	}
-	.filterBlock svg{
+	.quickNavigation h2{
+		margin: 0 20px 10px;
+		text-align: center;
+		background-color: var(--border_grey);
+		border-radius:  20px;
+
+	}
+	.quickNavigation .item{
+		margin-bottom: 15px;
+	}
+	.quickNavigation .descriptionContent{
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: .050em;
+	}		
+	.quickNavigation svg{
+		fill:var(--grey);
+		width: 18px;
+		height: 18px;
+	}
+		
+}
+
+/*- MOBILE -*/
+@media (min-width: 320px) and (max-width: 640px){
+	.sponsorLogoDesktop{
 		display: none;
 	}
-	.filterBlock .nameFilter{
-	font-weight: bold;
-	}
-	.checkboxMenu{
-		display: block;
-		display: none;
-		width: 50%;
+	header{
+		width: 100%;
+		font-size: 16px;	
+		background-color: var(--blue);
+		padding: 15px 10px;		
+	}	
+	.headerLogo svg{
+		height: 45px;
+		margin: 0 auto;
+		width: 200px;
+	}	
+	.headerLogo{
+		width: 200px;
+		height: 60px;
 		margin: 0 auto;
 	}
-			.checkbox label:after {
-				top:20%;
-				left:0;
-			}
-.filterGrid{
-	padding: 5px 10px ;
-	display: flex;
-	justify-content: space-between;
-}
-/*LIST CONTENT*/
-.blockContent{
-	display: flex;
-	flex-direction: column-reverse;
-		margin-bottom: 15px;
-		background: #fff;
-		border-bottom: 1px solid var(--grey);
-		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.123);
-		position: relative;
+	.headerMenu{
+		display: flex;
+		justify-content: space-between;				
 	}
-	.dateContent,
-	.locationContent{
-	padding: 5px 10px;
-	}
-	/*location EVENT*/		
-		.locationContent{	
-		/* background-color: var(--blue);	
-		border-radius: 20px 0 0 20px;			 */
-		}	
-	.locationContent strong{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
-	/*date EVENT*/	
-	.dateContent{
-	background-color: var(--blue);
-	position: absolute;
-	top: 0;
-	width: 75px;
-	text-align: center;
-	}
-	.dateContent strong{
-		color: #fff;
-		font-size: 16px;
-		letter-spacing: 1.7px;
-	}
-	.dateContent p{
-		color: #fff;
-		font-size: 14px;
+	.headerMenu a,
+	.headerMenu a:visited,
+	.headerMenu a:active{
+		border-bottom: none;
 		text-transform: uppercase;
-	}
-	/*mane content*/
-	.nameContent{
-		padding: 0 10px;
-	}
-	.nameContent p,
-	.nameContent h2{
-	width: 100%;
-	}
-	.nameContent h2{
-		font-weight: bold;
-	}
-	/*bottom content*/
-	hr{
+		color: #fff;
+		letter-spacing: .7px;
+}
+.anotheHeaderItem{
 	display: none;
-	}
-	.blockContent .bottomContent{
-	display: flex;
-	justify-content:flex-end;
-	vertical-align: center;		
-	}
-	.blockContent .bottomContent svg{
-	margin-left: 30px;
-	}	
-	.blockContent .bottomContent	 {
-	margin: 10px;
-	}
-/*image EVENT*/
-.imgContent{
-	min-width: 320px;
-	min-height: 100px;
 }
-.imgContent img{
-	width: 100%;
-}	
-	
+.anotheHeaderIcon svg{
+	fill: #fff;
 }
-
-/*---MOBILE---*/
-@media (min-width: 320px) and (max-width: 640px){
-body{
-	background: var(--bg_lightgrey);
-}
-.container{
-	font-size: 16px;
-}
-/*FILTERS*/
-		.filterMenu{
-		display: flex;
-		text-align: center;
-		margin: 25px  0 10px 0 ;
-		}
-		.filterBlock {
-			width: 30%;
-			padding: 3px; 
-			margin: 5px;	
-			background-color:var(--border_grey);
-			border-radius: 20px;
-				white-space: nowrap; 
-				align-items: center;
-				overflow: hidden;		
-				text-overflow: ellipsis;
-		}
-		.filterBlock svg{
-			display: none;
-		}
-		.filterBlock .nameFilter{
-		font-weight: bold;
-		}
-		.checkboxMenu{	
-			margin: 0 5px;
-		}
-
-/*checkbox*/
-.checkboxMenu{
-	display: block;
-	display: none;
-	width: 50%;
-	margin: 0 auto;
-}
-		.checkbox label:after {
-			top:20%;
-			left:0;
-		}
-.filterGrid{
-	padding: 5px 10px ;
-	display: flex;
-	justify-content: space-between;
-}
-/*LIST CONTENT*/
-.listContent{
-	background-color: var(--light_grey);
-}
-	.blockContent{
-	display: flex;
-	flex-direction: column-reverse;
-		margin-bottom: 15px;
-		background: #fff;
-		border-bottom: 1px solid var(--grey);
-		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.123);
-	}
-	.infoContent{
-		padding: 5px 10px;
-	}
-/*top content*/
-		.topEventContent strong,
-		.topEventContent .dateContent{
-			font-weight: normal;
-		}
-		.dateContent{
-			display: flex;
-		}
-		.dateContent strong{
-			margin-right: 5px;
-		}
-/*mane content*/
-		.nameContent h2{
-			font-size: 20px;
-			font-weight: normal;
-		}
-		.nameContent{
-			padding: 5px 0;
-		}
-		.nameContent h2{
-			font-weight: bold;
-		}
-/*bottom content*/
-		hr{
-		display: none;
-		}
-		.blockContent .bottomContent{
-		display: flex;
-		justify-content:space-around;
-		vertical-align: center;
-		text-align: center;	
-		}	
-	 
-/*image EVENT*/
-.imgContent img{
-	width: 100%;
-}	
-/* .blockContent .imgContent{
-	background: url("img/pics/logo2x2.png") no-repeat right 50px top 30px;
-	background-size: 200px;
-} */
-/*RIGHT SECTION*/
-.otherSide{display: none;}
-.itemSection p{
-	vertical-align: top;
-	margin-left: 5px;
-}
-
 }
