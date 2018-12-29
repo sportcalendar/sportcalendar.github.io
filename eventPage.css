@@ -1,0 +1,57 @@
+/*LIST CONTENT*/
+a, a:visited, a:active{
+  font-weight: bold;
+  border-bottom: none;
+  color: var(--blue);
+}
+/*RIGHT SIDE SECTION*/
+.itemSection .contentRightside{
+	width: 215px;
+}
+.itemSection .iconRightside{
+	width: 35px;
+}
+.eventPage{
+  background-color: #fff;
+}
+.eventPage img{
+  width: 100%;
+}
+.bg-title{
+  text-align: center;
+  padding: 20px 0;
+  line-height: 40px;
+}
+.listContentEventPage{
+  display: none;
+}
+
+/*---DESKTOP---*/
+@media (min-width: 1020px) and (max-width: 1450px){
+  .eventPage .listContent{
+    background-color: #fff;
+  }
+  .titleEventPage h1{
+    font-size: 20px;
+  }
+  .photoEvent img{
+    width: 300px;
+  }
+  .headerEventPage{
+    display: flex;
+  }
+}
+
+/*---TABLET---*/
+@media (min-width: 640px) and (max-width: 1020px){
+
+}
+
+/*---MOBILE---*/
+@media (min-width: 320px) and (max-width: 640px){
+
+  /*RIGHT SECTION*/
+  .otherSide{display: none;}
+
+
+}
