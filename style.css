@@ -91,7 +91,7 @@ body{
 
 	
 /*- DESKTOP -*/
-@media (min-width: 1020px) and (max-width: 1450px){	
+@media (min-width: 1020px) {	
 	.container{
 		font-size: 14px;		
 	}
