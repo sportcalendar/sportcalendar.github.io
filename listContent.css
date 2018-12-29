@@ -74,6 +74,12 @@
 		.nameContent h2{
 			font-size: 18px;
 		}
+		.nameContent .descriptionContent{
+			white-space: nowrap; 
+			align-items: center;
+			overflow: hidden;		
+			text-overflow: ellipsis;
+		}
 /*bottom event content*/
 		.bottomContent svg{
 			fill:var(--grey);
@@ -416,6 +422,8 @@ body{
 		.nameContent h2{
 			font-weight: bold;
 		}
+
+		
 /*bottom content*/
 		hr{
 		display: none;
