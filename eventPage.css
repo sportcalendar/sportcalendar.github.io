@@ -1,4 +1,7 @@
 /*LIST CONTENT*/
+.eventPage .fb{
+  text-decoration: underline;
+}
 a, a:visited, a:active{
   font-weight: bold;
   border-bottom: none;
@@ -13,10 +16,9 @@ a, a:visited, a:active{
 }
 .eventPage{
   background-color: #fff;
+
 }
-.eventPage img{
-  width: 100%;
-}
+
 .bg-title{
   text-align: center;
   padding: 20px 0;
@@ -34,22 +36,23 @@ a, a:visited, a:active{
   .titleEventPage h1{
     font-size: 20px;
   }
-  .photoEvent img{
-    width: 300px;
-  }
   .headerEventPage{
     display: flex;
   }
+ 
 }
 
 /*---TABLET---*/
 @media (min-width: 640px) and (max-width: 1020px){
-
+  
 }
 
 /*---MOBILE---*/
 @media (min-width: 320px) and (max-width: 640px){
-
+ .container{
+   background-color: #fff;
+   min-height: 750px;
+ }
   /*RIGHT SECTION*/
   .otherSide{display: none;}
 
