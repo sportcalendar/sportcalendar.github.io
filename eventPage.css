@@ -1,60 +1,179 @@
 /*LIST CONTENT*/
-.eventPage .fb{
-  text-decoration: underline;
+.eventPage{ 
+  background-color: #fff;
 }
-a, a:visited, a:active{
+.eventPage .bottomContent{
+  display: flex;
+  justify-content: space-around;
+}
+.eventPage .bottomContent button{
+  border: none;
+  background: none;
+  border-radius: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: var(--grey);
+}
+.eventPage .bottomContent span{
+  color:var(--grey);
+}
+.eventPage .bottomContent svg{
+    fill: var(--grey);
+  }
+
+  .eventPage .bottomContent button:hover,
+  .eventPage .bottomContent button:focus{
+		outline: none;
+		background: var(--bg_lightgrey)
+   }
+   .eventPage .regestration button{
+      background-color: var(--grey);
+      border-radius: 20px;
+      padding: 0 30px;
+      border: var(--blue);
+      font-weight: bold;      
+    }
+    .eventPage .regestration button:hover,
+    .regestration button:focus{
+      outline: none;
+      background: var(--grey);
+    }
+.eventPage a, 
+.eventPage a:visited, 
+.eventPage a:active{
   font-weight: bold;
   border-bottom: none;
   color: var(--blue);
 }
-/*RIGHT SIDE SECTION*/
-.itemSection .contentRightside{
-	width: 215px;
-}
-.itemSection .iconRightside{
-	width: 35px;
-}
-.eventPage{
-  background-color: #fff;
-
-}
-
-.bg-title{
-  text-align: center;
-  padding: 20px 0;
-  line-height: 40px;
-}
-.listContentEventPage{
-  display: none;
-}
 
 /*---DESKTOP---*/
 @media (min-width: 1020px) and (max-width: 1450px){
-  .eventPage .listContent{
-    background-color: #fff;
+/*img*/
+  .eventPage .imgContent img{
+    width: 100%;
   }
-  .titleEventPage h1{
-    font-size: 20px;
-  }
-  .headerEventPage{
-    display: flex;
-  }
- 
+/*infoContent*/
+.eventPage .itemContent{
+  margin-bottom: 30px;
 }
+ .eventPage .infoContent{  
+  padding: 10px 20px;
+ }
+ .detaisEventSection .dateLocation,
+ .detaisEventSection .organizers{
+  width: 45%;
+ }
+ .detaisEventSection .socielNetwork{
+   display: flex;
+   flex-direction: column;
+ }
+ .detaisEventSection .socielNetwork svg{
+   margin-bottom: 10px;
+ } 
+ .eventPage .nameContent h2{
+  font-size: 20px;
+}
+.detaisEventSection{
+  display: flex;
+  justify-content: space-between;
+}
+.organizers{
+  display: flex;
+  flex-direction: column;
+}
+
+.eventPage hr{
+  border: none;
+  height: 1px;
+  margin-bottom: 10px;
+  background-color: var(--bg_lightgrey);
+}
+}
+
 
 /*---TABLET---*/
 @media (min-width: 640px) and (max-width: 1020px){
-  
+/*img*/
+.eventPage .imgContent img{
+  width: 100%;
+}
+/*infoContent*/
+.eventPage .itemContent{
+margin-bottom: 30px;
+}
+.eventPage .infoContent{  
+padding: 10px 20px;
+}
+.detaisEventSection .dateLocation,
+.detaisEventSection .organizers{
+width: 45%;
+}
+.detaisEventSection .socielNetwork{
+ display: flex;
+ flex-direction: column;
+}
+.detaisEventSection .socielNetwork svg{
+ margin-bottom: 10px;
+} 
+.eventPage .nameContent h2{
+font-size: 20px;
+}
+.detaisEventSection{
+display: flex;
+justify-content: space-between;
+}
+.organizers{
+display: flex;
+flex-direction: column;
+}
+
+.eventPage hr{
+border: none;
+height: 1px;
+margin-bottom: 10px;
+background-color: var(--bg_lightgrey);
+}
 }
 
 /*---MOBILE---*/
 @media (min-width: 320px) and (max-width: 640px){
- .container{
-   background-color: #fff;
-   min-height: 750px;
+ 
+ /*img*/
+ .eventPage .itemDetail{
+   margin-bottom: 20px;
  }
-  /*RIGHT SECTION*/
-  .otherSide{display: none;}
+.eventPage .imgContent img{
+  width: 100%;
+}
+/*infoContent*/
+.eventPage .itemContent{
+margin-bottom: 30px;
+}
+.eventPage .infoContent{  
+padding: 10px 20px;
+}
+.detaisEventSection .socielNetwork{
+ display: flex;
+}
+.detaisEventSection .socielNetwork svg{
+ margin-right: 10px;
+} 
+.eventPage .nameContent h2{
+font-size: 20px;
+}
+.organizers{
+display: flex;
+flex-direction: column;
+}
+.eventPage hr{
+border: none;
+height: 1px;
+margin-bottom: 10px;
+background-color: var(--bg_lightgrey);
+}
 
+.otherSide{
+  display: none;
+}
 
 }
