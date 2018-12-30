@@ -59,25 +59,25 @@
  .eventPage .infoContent{  
   padding: 10px 20px;
  }
- .detaisEventSection .dateLocation,
- .detaisEventSection .organizers{
+ .eventPage .detaisEventSection .dateLocation,
+ .eventPage .detaisEventSection .organizers{
   width: 45%;
  }
- .detaisEventSection .socielNetwork{
+ .eventPage .detaisEventSection .socielNetwork{
    display: flex;
    flex-direction: column;
  }
- .detaisEventSection .socielNetwork svg{
+ .eventPage .detaisEventSection .socielNetwork svg{
    margin-bottom: 10px;
  } 
  .eventPage .nameContent h2{
   font-size: 20px;
 }
-.detaisEventSection{
+.eventPage .detaisEventSection{
   display: flex;
   justify-content: space-between;
 }
-.organizers{
+.eventPage .organizers{
   display: flex;
   flex-direction: column;
 }
@@ -104,25 +104,25 @@ margin-bottom: 30px;
 .eventPage .infoContent{  
 padding: 10px 20px;
 }
-.detaisEventSection .dateLocation,
-.detaisEventSection .organizers{
+.eventPage .detaisEventSection .dateLocation,
+.eventPage .detaisEventSection .organizers{
 width: 45%;
 }
-.detaisEventSection .socielNetwork{
+.eventPage .detaisEventSection .socielNetwork{
  display: flex;
  flex-direction: column;
 }
-.detaisEventSection .socielNetwork svg{
+.eventPage .detaisEventSection .socielNetwork svg{
  margin-bottom: 10px;
 } 
 .eventPage .nameContent h2{
 font-size: 20px;
 }
-.detaisEventSection{
+.eventPage .detaisEventSection{
 display: flex;
 justify-content: space-between;
 }
-.organizers{
+.eventPage .organizers{
 display: flex;
 flex-direction: column;
 }
@@ -152,16 +152,16 @@ margin-bottom: 30px;
 .eventPage .infoContent{  
 padding: 10px 20px;
 }
-.detaisEventSection .socielNetwork{
+.eventPage .detaisEventSection .socielNetwork{
  display: flex;
 }
-.detaisEventSection .socielNetwork svg{
+.eventPage .detaisEventSection .socielNetwork svg{
  margin-right: 10px;
 } 
 .eventPage .nameContent h2{
 font-size: 20px;
 }
-.organizers{
+.eventPage .organizers{
 display: flex;
 flex-direction: column;
 }
