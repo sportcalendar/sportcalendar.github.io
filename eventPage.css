@@ -31,7 +31,8 @@
       border-radius: 20px;
       padding: 0 30px;
       border: var(--blue);
-      font-weight: bold;      
+      font-weight: bold;    
+      text-transform: uppercase;  
     }
     .eventPage .regestration button:hover,
     .regestration button:focus{
