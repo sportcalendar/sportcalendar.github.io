@@ -48,16 +48,16 @@
 }
 
 /*---DESKTOP---*/
-@media (min-width: 1020px) and (max-width: 1450px){
+@media (min-width: 1020px) {
 /*img*/
   .eventPage .imgContent img{
     width: 100%;
   }
-/*infoContent*/
+/*infoEventPage*/
 .eventPage .itemContent{
   margin-bottom: 30px;
 }
- .eventPage .infoContent{  
+ .eventPage .infoEventPage{  
   padding: 10px 20px;
  }
  .eventPage .detaisEventSection .dateLocation,
@@ -98,11 +98,11 @@
 .eventPage .imgContent img{
   width: 100%;
 }
-/*infoContent*/
+/*infoEventPage*/
 .eventPage .itemContent{
 margin-bottom: 30px;
 }
-.eventPage .infoContent{  
+.eventPage .infoEventPage{  
 padding: 10px 20px;
 }
 .eventPage .detaisEventSection .dateLocation,
@@ -146,11 +146,11 @@ background-color: var(--bg_lightgrey);
 .eventPage .imgContent img{
   width: 100%;
 }
-/*infoContent*/
+/*infoEventPage*/
 .eventPage .itemContent{
 margin-bottom: 30px;
 }
-.eventPage .infoContent{  
+.eventPage .infoEventPage{  
 padding: 10px 20px;
 }
 .eventPage .detaisEventSection .socielNetwork{

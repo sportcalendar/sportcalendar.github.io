@@ -1,0 +1,138 @@
+.notUKR{
+	background: rgba(82, 82, 132, 0.07)!important;
+}
+/*hover focus active*/
+	.bottomContent button{
+		border: none;
+		background: none;
+		border-radius: 20px;
+		padding: 0 10px;
+	}
+	.bottomContent button:hover,
+	.bottomContent button:focus{
+		outline: none;
+		background: var(--bg_lightgrey);
+	}
+/*top event content*/	
+		.topEventContent{
+			display: flex;
+			justify-content: space-between;
+			letter-spacing: .01em;
+		}
+		.topEventContent .dateContent,
+		.topEventContent .locationContent{
+			width: 50%;
+			white-space: nowrap; 
+				align-items: center;
+				overflow: hidden;		
+				text-overflow: ellipsis;
+		}
+		.topEventContent .locationContent{
+			text-align: right;
+		}		
+/*name EVENT*/
+		.blockContent .nameContent a,
+		.blockContent .nameContent a:visited,
+		.blockContent .nameContent a:active{
+			font-weight: bold;
+			border-bottom: none;
+			color: var(--blue);
+		}
+/*RIGHT SIDE SECTION*/
+	.itemSection .contentRightside{
+		width: 215px;
+	}
+	.itemSection .iconRightside{
+		width: 35px;
+	}
+/*modal*/
+	.dateFilter .modal,
+	.locFilter .modal,
+	.categoryFilter .modal{
+		display: none;
+	}
+body{
+		background: var(--bg_lightgrey);
+	}	
+.blockContent{
+			margin-bottom: 2px;
+			border-bottom: 1px solid var(--border_grey);
+			background-color: #fff;	
+		}	
+		.blockContent:hover{
+			box-shadow: 2px rgba(0, 0, 0, 0.123);
+			transition: 100ms linear all;
+		}
+		.infoContent{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 100%;		
+			padding: 2px 10px;
+		}
+		.nameContent h2{
+		width: 100%;
+		text-align: center;	
+	}
+/*---DESKTOP---*/
+@media (min-width: 1020px) {
+			
+	/*top EVENT*/
+	
+	.topEventContent strong{
+		font-weight: normal;
+		letter-spacing: .030em;
+		font-size: 14px;
+	}
+	.nameContent h2{
+		font-size: 16px;
+}
+
+/*---TABLET---*/
+@media (min-width: 640px) and (max-width: 1020px){
+
+	/*top EVENT*/
+	
+	.topEventContent strong{
+		font-weight: normal;
+		letter-spacing: .030em;
+		font-size: 14px;
+	}
+	.nameContent h2{
+		font-size: 16px;
+	}
+	
+}
+
+/*---MOBILE---*/
+@media (min-width: 320px) and (max-width: 640px){
+	.container{
+		font-size: 16px;
+	}
+	/*LIST CONTENT*/
+		.infoContent{
+			padding: 0 5px;
+		}
+			
+	/*top content*/
+		.topEventContent strong,
+		.topEventContent .dateContent{
+			font-weight: normal;
+		}
+		.dateContent{
+			display: flex;
+		}
+		
+	/*mane content*/
+		.nameContent h2{
+			font-size: 20px;
+		}
+		
+	/*RIGHT SECTION*/
+	.otherSide{display: none;}
+	.itemSection p{
+		vertical-align: top;
+		margin-left: 5px;
+	}
+
+}

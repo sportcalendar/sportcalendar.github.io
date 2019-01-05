@@ -239,8 +239,12 @@ body{
 
 /*EVENT SECTION*/	
 .contentSection{
-	margin-right: 40px;
-}		
+	margin-right: 20px;
+	width: 60%;
+}	
+.otherSide{
+	width: 38%
+}	
 .filterMenu{
 	display: flex;
 	justify-content: space-between;
@@ -264,19 +268,25 @@ body{
 	.filterBlock .nameFilter{
 	font-weight: bold;
 	}
-	.checkboxMenu{
-		display: block;
-		display: none;
-		width: 50%;
-		margin: 0 auto;
-	}
-			.checkbox label:after {
-				top:20%;
-				left:0;
-			}
+	/*checkbox*/
+.filterTypeSport{
+	display: none;
+}
+.filterLevelSport li{
+	margin-right: 15px;
+}
+.checkboxMenu{
+	display: flex;
+	width: 50%;
+	margin: 0 auto;
+}
+		.checkbox label:after {
+			top:20%;
+			left:0;
+		}
 .filterGrid{
 	padding: 5px 10px ;
-	display: flex;
+	display: none;
 	justify-content: space-between;
 }
 /*LIST CONTENT*/
@@ -335,7 +345,7 @@ width: 100%;
 }
 
 /*---MOBILE---*/
-@media (min-width: 320px) and (max-width: 640px){
+@media (max-width: 640px){
 body{
 	background: var(--bg_lightgrey);
 }
@@ -370,9 +380,14 @@ body{
 		}
 
 /*checkbox*/
-.checkboxMenu{
-	display: block;
+.filterTypeSport{
 	display: none;
+}
+.filterLevelSport li{
+	margin-right: 15px;
+}
+.checkboxMenu{
+	display: flex;
 	width: 50%;
 	margin: 0 auto;
 }
@@ -382,7 +397,7 @@ body{
 		}
 .filterGrid{
 	padding: 5px 10px ;
-	display: flex;
+	display: none;
 	justify-content: space-between;
 }
 /*LIST CONTENT*/
