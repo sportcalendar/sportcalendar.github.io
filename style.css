@@ -32,37 +32,6 @@ body{
 	height: 1px;
 	margin: -1px;
 }
-/*SPONSOR MOB*/
-.sponsorLogoMob,
-.sponsorLogoDesktop{
-	display: none;
-	align-items: center;
-	padding: 20px 10px ;	
-}
-.sponsorLogoMob .sponsorIcon{
-	fill:#E31E24;
-	height: 45px;
-	margin-right: 30px;
-}
-.sponsorLogoMob .sponsorContent{
-	font-size: 14px;
-}
-.sponsorLogoMob .sponsorTitle{
-	color: #E31E24;
-	font-weight: bold;
-}
-/*SPONSOR DESCKTOP*/
-.sponsorLogoDesktop .sponsorIcon{
-	fill:#E31E24;
-	height: 50px;
-	margin-right: 20px;
-}
- .sponsorIcon,
- .sponsorContent p{
-	color: #E31E24;
-	font-weight: bold;
-}
-
 
 /*MODAL*/
 		.modal{
@@ -128,7 +97,6 @@ body{
 	.headerMenu a:visited,
 	.headerMenu a:active{
 		border-bottom: none;
-		text-transform: uppercase;
 		color: #fff;
 		letter-spacing: .7px;	
 }	
